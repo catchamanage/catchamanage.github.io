@@ -21,6 +21,7 @@ var filesToCache = [
        '/profile.html',
        '/reason.html',
        '/topic.html',
+       '/uprole.html',
 
        '/public/css/uikit.min.css',
        '/public/css/uikit.almost-flat.min.css',
@@ -44,6 +45,7 @@ var filesToCache = [
 
        '/scripts/app.js',
 
+       '/public/images/',
        '/public/images/vote.png',
        '/public/images/votex25.png',
        '/public/images/emoji_love.png',
