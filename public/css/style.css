@@ -624,7 +624,8 @@ html.wrapp-layout, html.wrapp-layout body {
     padding-left: 15px;
     padding-right: 15px; }
   html.wrapp-layout .catcha-purple, html.wrapp-layout body .catcha-purple {
-    margin: 100px;
+    margin: 100px auto;
+    margin-bottom: 80px;
     height: 150px; }
   @media screen and (min-width: 768px) {
     html.wrapp-layout .container-cc, html.wrapp-layout body .container-cc {
