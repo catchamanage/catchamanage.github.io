@@ -617,4 +617,26 @@ input[type=text] {
       line-height: 30px;
       color: #393939; }
 
+/*Login*/
+html.wrapp-layout, html.wrapp-layout body {
+  background: #fff !important; }
+  html.wrapp-layout .container-cc, html.wrapp-layout body .container-cc {
+    padding-left: 15px;
+    padding-right: 15px; }
+  html.wrapp-layout .catcha-purple, html.wrapp-layout body .catcha-purple {
+    margin: 100px;
+    height: 150px; }
+  @media screen and (min-width: 768px) {
+    html.wrapp-layout .container-cc, html.wrapp-layout body .container-cc {
+      padding-left: 15%;
+      padding-right: 15%; } }
+  @media screen and (min-width: 1024px) {
+    html.wrapp-layout .container-cc, html.wrapp-layout body .container-cc {
+      padding-left: 25%;
+      padding-right: 25%; } }
+  @media screen and (min-width: 1366px) {
+    html.wrapp-layout .container-cc, html.wrapp-layout body .container-cc {
+      padding-left: 35%;
+      padding-right: 35%; } }
+
 /*# sourceMappingURL=style.css.map */

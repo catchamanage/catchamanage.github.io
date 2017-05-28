@@ -893,3 +893,37 @@ $inside-input: $nav-height - ($nav-padding*2) - $nav-border - ($nav-padding*2);
         }
     }
 }
+
+/*Login*/
+html.wrapp-layout, html.wrapp-layout body{
+    background: #fff !important;
+
+    .container-cc{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .catcha-purple{
+        margin: 100px;
+        height: 150px;
+    }
+
+    @media screen and (min-width: 768px){
+        .container-cc{
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        .container-cc{
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+    @media screen and (min-width: 1366px){
+        .container-cc{
+            padding-left: 35%;
+            padding-right: 35%;
+        }
+    }
+}
