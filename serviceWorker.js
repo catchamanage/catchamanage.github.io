@@ -19,7 +19,7 @@ var filesToCache = [
        '/liststore.html',
        '/login.html',
        '/profile.html',
-       '/reasson.html',
+       '/reason.html',
        '/topic.html',
 
        '/public/css/uikit.min.css',
