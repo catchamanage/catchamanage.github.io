@@ -215,6 +215,11 @@ input[type=text] {
 .clearfix{
     clear: both;
 }
+/*Fix Safari*/
+a, a:active, a:focus, a:hover{   
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 /*Fix UIKIT*/
 .uk-container-simon{
     padding: 0 15px !important;
