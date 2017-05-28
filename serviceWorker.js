@@ -23,11 +23,18 @@ var filesToCache = [
        '/topic.html',
 
        '/public/css/uikit.min.css',
-       '/public/font-awesome/css/font-awesome.min.css',
        '/public/css/uikit.almost-flat.min.css',
        '/public/css/components/form-password.almost-flat.min.css',
        '/public/css/components/search.almost-flat.min.css',
        '/public/css/style.css',
+
+       '/public/font-awesome/css/font-awesome.min.css',
+       '/public/font-awesome/fonts/FontAwesome.otf',
+       '/public/font-awesome/fonts/fontawesome-webfont.eot',
+       '/public/font-awesome/fonts/fontawesome-webfont.svg',
+       '/public/font-awesome/fonts/fontawesome-webfont.ttf',
+       '/public/font-awesome/fonts/fontawesome-webfont.woff',
+       '/public/font-awesome/fonts/fontawesome-webfont.woff2',
 
        '/public/js/jquery-1.12.4.min.js',
        '/public/js/Chart.min.js',
@@ -44,8 +51,25 @@ var filesToCache = [
        '/public/images/emoji_smile.png',
        '/public/images/emoji_smilex25.png',
        '/public/images/emoji_angry.png',       
-       '/public/images/emoji_angryx25.png'
+       '/public/images/emoji_angryx25.png',
+       '/public/images/icon/notification.png',
+       '/public/images/icon/company.png',
+       '/public/images/icon/message.png',
+       '/public/images/icon/follow.png',
+       '/public/images/icon/pie-chart.png',
+       '/public/images/icon/menu.png',
+       '/public/images/icon/manager.png',
+       '/public/images/icon/user.png',
+       '/public/images/icon/eyeglasses.png',
+       '/public/images/icon/smartphone.png',
+       '/public/images/icon/speaker.png',
+       '/public/images/icon/star.png',
+       '/public/images/icon/reload.png',
+       '/public/images/icon/exit.png'
 ]
+
+       
+
 
 
 self.addEventListener('install', function (e) {
