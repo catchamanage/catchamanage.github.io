@@ -46,6 +46,7 @@ var filesToCache = [
        '/scripts/app.js',
 
        '/public/images/',
+       '/public/images/employee/',
        '/public/images/vote.png',
        '/public/images/votex25.png',
        '/public/images/emoji_love.png',
