@@ -5,32 +5,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
-	<title>Login | Catcha Manage - Ứng dụng quản lý feedback, chăm sóc ngay khi khách hàng bước chân vào cửa hàng</title>
-	<link rel="icon" href="public/images/favicon.ico">
-	<link rel="stylesheet" href="public/css/uikit.almost-flat.css" />
-	<link rel="stylesheet" href="public/css/components/form-password.almost-flat.min.css" />
-	<link rel="stylesheet" href="public/css/style.css" />
+	<title>Catcha Tap</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="uikit/css/uikit.almost-flat.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<script src="public/js/uikit.min.js"></script>
-	<script src="public/js/components/form-password.min.js"></script>
+	<script src="uikit/js/uikit.min.js"></script>
 
 </head>
 <body>
 
-<div class="container-cc">
-    	<div class="text-center">
-	    	<img src="public/images/catcha-purple.png" alt="Catcha - Ứng dụng quản lý feedback, chăm sóc ngay khi khách hàng bước chân vào cửa hàng" class="catcha-purple">
-    	</div>
-    	<div class="uk-width-1-1">
-		        <div class="uk-form-row">
-				    <a href="home.html" class="uk-button uk-width-1-1 uk-button-large uk-button-primary">Đăng ký</a>
-		        </div>
-		        <div class="uk-form-row">
-				    <button class="uk-button uk-width-1-1 uk-button-large btn-feedback-more">Đăng nhập</button>
-		        </div>
+<div class="screen-magic">
+	<div class="uk-container uk-container-center">
+		<h1 class="word-tip uk-text-center">Hôm nay bạn cảm thấy thế nào?</h1>
+
+		<div class="uk-grid box-emoji uk-text-center">
+		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
+		    	<div class="emoji-item" data-react="1">
+			     	<img src="images/emoji/in-love.png" alt="" class="emoji">
+			     	<p class="emoji-note uk-text-muted">Rất phấn khích</p>
+		    	</div>
+		    </div>
+		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
+		    	<div class="emoji-item" data-react="2">
+		       		<img src="images/emoji/smiling.png" alt="" class="emoji">
+		       		<p class="emoji-note uk-text-muted">Hài lòng</p>
+		    	</div>
+		    </div>
+		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
+		    	<div class="emoji-item" data-react="3">
+		   	   		<img src="images/emoji/mad.png" alt="" class="emoji">
+		   	   		<p class="emoji-note uk-text-muted">Không vui</p>
+		    	</div>
+		    </div>
 		</div>
+	</div>
 </div>
+
+<!-- http://www.soundjay.com/button/beep-07.wav -->
+<audio id="beeptap" src="sound/button-16.mp3"></audio>
+
+<div class="screen-topic" hidden>
+
+	<div class="guide-box">
+		<h1 class="guide uk-text-center">Lý do nào bạn không hài lòng? Mách chúng tôi để phục vụ bạn tốt hơn</h1>
+		<!-- <h1 class="guide uk-text-center">Mời bạn đánh giá để giúp chúng tôi cải thiện chất lượng dịch vụ</h1> -->
+	</div>
+
+
+	<div class="uk-container uk-container-center topic-box">
+		<div class="uk-grid uk-text-center">
+		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+		    	<div class="topic-item" data-react="1">
+			     	<img src="images/topic/chef.png" alt="" class="topic">
+			     	<p class="topic-note uk-text-muted">Nhân viên</p>
+		    	</div>
+		    </div>
+		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+		    	<div class="topic-item" data-react="2">
+		       		<img src="images/topic/burger-flat.png" alt="" class="topic">
+		       		<p class="topic-note uk-text-muted">Thực đơn</p>
+		    	</div>
+		    </div>
+		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+		    	<div class="topic-item" data-react="3">
+		   	   		<img src="images/topic/grocery.png" alt="" class="topic">
+		   	   		<p class="topic-note uk-text-muted">Không gian</p>
+		    	</div>
+		    </div>
+		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+		    	<div class="topic-item" data-react="3">
+		   	   		<img src="images/topic/salt.png" alt="" class="topic">
+		   	   		<p class="topic-note uk-text-muted">Khẩu vị</p>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+
+
+	<div class="uk-container uk-container-center control-center">
+		<div class="uk-grid">
+			<div class="uk-width-1-2">
+				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold" data-uk-modal="{target:'#feedback'}">Góp ý kiến</button>
+			</div>
+			<div class="uk-width-1-2">
+				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Gửi phản hồi</button>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="uk-modal" id="feedback">
+    <div class="uk-modal-dialog uk-modal-dialog-large">
+        <div class="uk-modal-header">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</div>
+        
+		<form class="uk-form">
+
+			<div class="uk-form-row">
+			    <textarea cols="" rows="6" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"></textarea>
+			</div>
+			
+			<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+			<div class="uk-form-row">
+				<div class="uk-form-controls">
+					<label><input type="radio" name="gender"> Anh</label>
+					<label><input type="radio" name="gender"> Chị</label>
+				</div>
+			</div>
+
+			<div class="uk-form-row">
+			    <input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên">
+			</div>
+			<div class="uk-form-row">
+			    <input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
+			</div>
+			<div class="uk-form-row">
+			    <input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Email">
+			</div>
+
+	        <div class="uk-form-row">
+				<button class="uk-button uk-width-1-1 uk-button-primary">
+					<span class="uk-text-bold uk-text-uppercase text-roar">Gửi phản hồi</span>
+					<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
+				</button>
+	        </div>
+		</form>		
+
+    </div>
+</div>
+
+
 <script src="scripts/app.js"></script>
+<script>
+
+	//Tap Emotion
+	$(".emoji-item").click(function(){
+
+		//A beep
+		playSound();
+
+		//Change text
+		var react = $(this).data("react");
+		var string = "";
+		switch(react) {
+		    case 1:
+		        string = "Bạn yêu thích chúng tôi điều gì";
+		        break;
+		    case 2:
+		        string = "Bạn hài lòng chúng tôi về điều gì";
+		        break;
+		    case 3:
+		        string = "Điều gì khiến bạn chưa hài lòng vậy :(";
+		        break;
+		    default:
+		        string = "Điều gì khiến bạn chưa hài lòng vậy :(";
+		}
+
+		$(".guide").text(string);
+
+		//Hide Show Element
+		$(".screen-magic").hide();
+		$(".screen-topic").show();
+
+	});
+
+	//Play when customer tap
+	function playSound () {
+	    document.getElementById('beeptap').play();
+	}
+
+</script>
+
 </body>
 </html>

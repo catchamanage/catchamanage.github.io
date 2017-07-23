@@ -1,0 +1,286 @@
+/*Varibles*/
+/*Mixin*/
+/*Span*/
+.span-blue, .span-blue:hover {
+  background: #4376dd;
+  color: #fefefe; }
+
+.span-green, .span-green:hover {
+  background: #15bb92;
+  color: #fefefe; }
+
+.span-red, .span-red:hover {
+  background: #e52843;
+  color: #fefefe; }
+
+.span-pink, .span-pink:hover {
+  background: #e52843;
+  color: #fefefe; }
+
+.span-yellow, .span-yellow:hover {
+  background: #ffc801;
+  color: #fefefe; }
+
+/*Text*/
+.text-yellow {
+  color: #ffc801; }
+
+.text-gray {
+  color: #999999; }
+
+.text-blue {
+  color: #4376dd; }
+
+.text-green {
+  color: #15bb92; }
+
+.text-red {
+  color: #cd1b2c; }
+
+.text-black {
+  color: #393939; }
+
+.text-white {
+  color: #fefefe; }
+
+.text-center {
+  text-align: center; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-upper {
+  text-transform: uppercase; }
+
+/*margin*/
+.margin-bottom-remove {
+  margin-bottom: 0px; }
+
+.margin-top-remove {
+  margin-top: 0px; }
+
+.margin-bottom-10 {
+  margin-bottom: 10px; }
+
+.margin-top-10 {
+  margin-top: 10px; }
+
+.padding-both {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/*Button*/
+.btn-straight {
+  border-radius: 0px; }
+
+.btn-yellow, .btn-yellow:hover {
+  background: #ffc801;
+  color: #fefefe;
+  border: 2px solid #ffc801; }
+
+.btn-green, btn-green:hover {
+  background: #15bb92;
+  color: #fefefe;
+  border: 2px solid #15bb92; }
+
+.btn-feedback {
+  margin-left: 5px; }
+
+.btn-feedback-more, .btn-feedback-more:hover {
+  background: #ffc801;
+  color: black;
+  text-shadow: none;
+  border: 1px solid #ffc801;
+  font-weight: 500; }
+
+.btn-feedback-more:hover {
+  font-weight: bold; }
+
+/*Base*/
+html {
+  font-size: 62.5%;
+  background: #f0eff5;
+  -webkit-text-size-adjust: none; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #393939;
+  font-size: 1.4rem;
+  background: #f0eff5;
+  margin-bottom: 50px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+a:focus, a:active {
+  cursor: pointer;
+  outline: none; }
+
+.nav-route a:focus, .nav-route a:active {
+  background: #cecece; }
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.clearfix {
+  clear: both; }
+
+/*Fix Safari*/
+a, a:active, a:focus, a:hover {
+  -webkit-tap-highlight-color: transparent; }
+
+/*Fix UIKIT*/
+.uk-container-simon {
+  padding: 0 15px !important; }
+
+.uk-navbar {
+  border-radius: 0px;
+  background: #fcfcfc;
+  border: 1px solid transparent; }
+
+.uk-navbar-nav > li > a {
+  text-shadow: 0 0px 0 #fefefe; }
+
+.uk-navbar-toggle {
+  text-shadow: 0 0px 0 #fefefe; }
+
+.uk-button {
+  font-size: 1.4rem; }
+
+.uk-panel-box {
+  padding: 10px; }
+
+.uk-navbar-nav > li:hover > a, .uk-navbar-nav > li > a:focus, .uk-navbar-nav > li.uk-open > a {
+  background-color: transparent;
+  color: #393939;
+  outline: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent; }
+
+.menu-seting .icon-times {
+  display: none; }
+
+@media screen and (max-width: 414px) {
+  .uk-offcanvas-bar {
+    width: 100%; }
+
+  .menu-seting .icon-times {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 5px 15px;
+    right: 0;
+    font-size: 1.8rem;
+    color: #999999; } }
+/*Custom Emoji*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #fefefe; }
+
+@media screen and (min-width: 568px) {
+  .screen-magic {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* or overflow:auto; if you want scrollbars */ } }
+.word-tip {
+  color: #999999;
+  font-size: 3.6rem;
+  margin-top: 5%; }
+
+@media (max-width: 568px) {
+  .word-tip {
+    font-size: 2.4rem;
+    margin-bottom: 5px; } }
+.box-emoji .emoji-item {
+  margin: 15px;
+  cursor: pointer; }
+  .box-emoji .emoji-item .emoji {
+    width: 219px; }
+  .box-emoji .emoji-item .emoji-note {
+    font-size: 1.8rem; }
+
+@media screen and (max-width: 479px) {
+  .box-emoji .emoji-item {
+    margin: 10px; }
+    .box-emoji .emoji-item .emoji {
+      width: 100px; }
+    .box-emoji .emoji-item .emoji-note {
+      margin-top: 5px;
+      margin-bottom: 0px; } }
+/*Topic*/
+.screen-topic .guide-box {
+  background: #ffc801;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dddddd; }
+  .screen-topic .guide-box .guide {
+    margin: 0px;
+    color: #171c2f;
+    font-size: 2.4rem;
+    line-height: 3.2rem; }
+
+/*iPhone 6 Rotate*/
+@media screen and (max-width: 667px) {
+  .screen-topic .guide-box .guide {
+    font-size: 2.2rem;
+    line-height: 3.0rem; } }
+.control-center {
+  position: fixed;
+  height: 55px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  padding: 5px 0px; }
+  .control-center .uk-button {
+    height: 45px;
+    font-size: 1.8rem; }
+
+.topic-box {
+  padding: 15px 0px; }
+  .topic-box .topic-item {
+    cursor: pointer; }
+    .topic-box .topic-item .topic {
+      width: 128px; }
+    .topic-box .topic-item .topic-note {
+      margin-top: 3px; }
+
+/*iPhone 6 Rotate*/
+@media screen and (max-width: 667px) {
+  .screen-topic .guide-box .guide {
+    font-size: 2.2rem;
+    line-height: 3.0rem; } }
+.help-block {
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.text-roar {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  display: block;
+  padding-top: 5px;
+  margin-bottom: -5px; }
+
+.text-rule {
+  opacity: 0.9; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,441 @@
+/*Varibles*/
+$yellow: #ffc801;
+$blue-drank: #171c2f;
+
+
+$background: rgba(240, 239, 245, 1);
+$gray: rgba(153, 153, 153, 1);
+$gray-light: rgba(221, 221, 221, 1);
+$white: rgba(254, 254, 254, 1);
+$blue: rgba(67, 118, 221, 1);
+$blue-light: rgba(41, 172, 228, 1);
+$green: rgba(21, 187, 146, 1);
+$red: rgba(205, 27, 44, 1);
+$crimson: rgba(238, 49, 57, 1);
+$orange: rgba(255, 167, 0, 1);
+$pink: rgba(229, 40, 67, 1);
+$black: rgba(57, 57, 57, 1);
+$drank: rgba(0, 0, 0, 1);
+$drank-transparency: rgba(0, 0, 0, 0.1);
+$purple: rgba(84, 0, 84, 1);
+$red-light: rgba(230, 33, 23, 1);
+
+/*Mixin*/
+@mixin combinations-blue{
+    background: $blue;
+    color: $white;
+}
+
+@mixin combinations-green{
+    background: $green;
+    color: $white;
+}
+
+@mixin combinations-red{
+    background: $red;
+    color: $white;
+}
+
+@mixin combinations-pink{
+    background: $pink;
+    color: $white;
+}
+
+@mixin combinations-yellow{
+    background: $yellow;
+    color: $white;
+}
+
+
+/*Span*/
+.span-blue, .span-blue:hover{
+    @include combinations-blue;
+}
+.span-green, .span-green:hover{
+    @include combinations-green;
+}
+.span-red, .span-red:hover{
+    @include combinations-pink;
+}
+.span-pink, .span-pink:hover{
+    @include combinations-pink;
+}
+.span-yellow, .span-yellow:hover{
+    @include combinations-yellow;
+}
+
+
+/*Text*/
+
+.text-yellow{
+    color: $yellow;
+}
+
+.text-gray{
+    color: $gray;
+}
+.text-blue{
+    color: $blue;
+}
+.text-green{
+    color: $green;
+}
+.text-red{
+    color: $red;
+}
+.text-black{
+    color: $black;
+}
+.text-white{
+    color: $white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+
+/*margin*/
+
+.margin-bottom-remove{
+    margin-bottom: 0px;
+}
+.margin-top-remove{
+    margin-top: 0px;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.padding-both{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Button*/
+.btn-straight{
+    border-radius: 0px;
+}
+.btn-yellow, .btn-yellow:hover{
+    background: $yellow;
+    color: $white;
+    border: 2px solid $yellow;
+}
+
+.btn-green, btn-green:hover{
+    background: $green;
+    color: $white;
+    border: 2px solid $green;
+}
+
+
+.btn-feedback{
+    margin-left: 5px;
+}
+
+.btn-feedback-more, .btn-feedback-more:hover{
+    background: $yellow;
+    color: $drank;
+    text-shadow: none;
+    border: 1px solid $yellow;
+    font-weight: 500;
+}
+.btn-feedback-more:hover{
+    font-weight: bold;
+}
+
+/*Base*/
+html{
+    font-size: 62.5%;
+    background: $background;
+    -webkit-text-size-adjust: none
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $black;
+    font-size: 1.4rem;
+    background: $background;
+    margin-bottom: 50px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style:none;
+}
+a, a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:focus, a:active{
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-route a:focus, .nav-route a:active{
+    background: #cecece;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.clearfix{
+    clear: both;
+}
+/*Fix Safari*/
+a, a:active, a:focus, a:hover{   
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+/*Fix UIKIT*/
+.uk-container-simon{
+    padding: 0 15px !important;
+}
+.uk-navbar{
+    border-radius: 0px;
+    background: #fcfcfc;
+    border: 1px solid transparent;
+}
+
+.uk-navbar-nav > li > a{
+    text-shadow: 0 0px 0 $white;
+}
+
+.uk-navbar-toggle{
+    text-shadow: 0 0px 0 $white;
+}
+
+.uk-button{
+    font-size: 1.4rem;
+}
+.uk-panel-box{
+    padding: 10px;
+}
+
+.uk-navbar-nav > li:hover > a, .uk-navbar-nav > li > a:focus, .uk-navbar-nav > li.uk-open > a {
+    background-color: transparent;
+    color: $black;
+    outline: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.menu-seting{
+    .icon-times{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .uk-offcanvas-bar{
+        width: 100%;
+    }
+
+    .menu-seting{
+        .icon-times{
+            display: block;
+            position: absolute;
+            top: 0;
+            padding: 5px 15px;
+            right: 0;
+            font-size: 1.8rem;
+            color: $gray;
+        }
+    }
+}
+
+
+
+/*Custom Emoji*/
+
+
+html,body{ 
+    margin:0; 
+    padding:0;         
+    height:100%;
+    width:100%;
+    background: $white;
+}
+
+@media screen and (min-width: 568px){
+    .screen-magic{
+        height:100%;
+        width:100%;
+        overflow:hidden; /* or overflow:auto; if you want scrollbars */
+    }
+}
+
+.word-tip{
+    color: $gray;
+    font-size: 3.6rem;
+    margin-top: 5%;
+}
+
+@media (max-width: 568px) {
+    .word-tip{
+        font-size: 2.4rem;
+        margin-bottom: 5px;
+    }
+}
+
+.box-emoji{
+    .emoji-item{
+        margin: 15px;
+        cursor: pointer;
+
+        .emoji{
+            width: 219px;
+        }
+
+        .emoji-note{
+            font-size: 1.8rem;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 479px){
+    .box-emoji{
+        .emoji-item{
+            margin: 10px;
+            
+            .emoji{
+
+                width: 100px;
+
+            }
+            .emoji-note{
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+
+        }
+    }
+}
+
+
+/*Topic*/
+
+.screen-topic{
+    
+    .guide-box{
+        background: $yellow;
+        padding: 10px 15px;
+        border-bottom: 1px solid $gray-light;
+        .guide{
+
+            margin: 0px;
+            color: $blue-drank;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+
+/*iPhone 6 Rotate*/
+@media screen and (max-width: 667px){
+
+    .screen-topic{
+        
+        .guide-box{
+
+            .guide{
+
+                font-size: 2.2rem;
+                line-height: 3.0rem;
+            }
+        }
+    }
+
+
+}
+
+.control-center{
+    position: fixed;
+    height: 55px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    padding: 5px 0px;
+
+    .uk-button{
+        height: 45px;
+        font-size: 1.8rem;
+    }
+}
+
+
+.topic-box{
+    padding: 15px 0px;
+
+    .topic-item{
+
+        cursor: pointer;
+        .topic{
+            width: 128px;
+        }
+
+        .topic-note{
+            margin-top: 3px;
+        }
+    }
+}
+
+/*iPhone 6 Rotate*/
+@media screen and (max-width: 667px){
+
+    .screen-topic{
+        
+        .guide-box{
+
+            .guide{
+
+                font-size: 2.2rem;
+                line-height: 3.0rem;
+            }
+        }
+    }
+
+
+}
+
+
+.help-block{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.text-roar{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    display: block;
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+.text-rule{
+    opacity: 0.9;
+}
