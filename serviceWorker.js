@@ -1,8 +1,8 @@
 // Cache names
 
-var dataCacheName = 'catchaData-v1.1.3'
+var dataCacheName = 'catchaData-v1.1.4'
 
-var cacheName = 'catchaPWA-1.3'
+var cacheName = 'catchaPWA-1.4'
 
 // Application shell files to be cached
 
@@ -15,7 +15,7 @@ var filesToCache = [
        '/css/style.css',
 
        '/scripts/app.js',
-       
+
        '/uikit/js/uikit.min.js',
 ]
 
