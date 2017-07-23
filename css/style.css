@@ -269,6 +269,25 @@ html, body {
   .screen-topic .guide-box .guide {
     font-size: 2.2rem;
     line-height: 3.0rem; } }
+/*Feedback*/
+.screen-feedback {
+  height: 100%;
+  width: 100%;
+  background: black; }
+  .screen-feedback .wrap-feedback {
+    background: #fefefe;
+    border-radius: 5px;
+    margin-top: 15px; }
+    .screen-feedback .wrap-feedback .guide-box {
+      background: #ffc801;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 10px; }
+      .screen-feedback .wrap-feedback .guide-box .guide-text {
+        margin: 0; }
+    .screen-feedback .wrap-feedback .feedback-form {
+      padding: 15px; }
+
 .help-block {
   margin-top: 15px;
   margin-bottom: 5px; }

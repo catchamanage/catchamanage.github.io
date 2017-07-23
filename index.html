@@ -89,7 +89,8 @@
 	<div class="uk-container uk-container-center control-center">
 		<div class="uk-grid">
 			<div class="uk-width-1-2">
-				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold" data-uk-modal="{target:'#feedback'}">Góp ý kiến</button>
+				<!-- <button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold" data-uk-modal="{target:'#feedback'}">Góp ý kiến</button> -->
+				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold open-feedback">Góp ý kiến</button>
 			</div>
 			<div class="uk-width-1-2">
 				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Gửi phản hồi</button>
@@ -100,7 +101,7 @@
 </div>
 
 
-<div class="uk-modal" id="feedback">
+<!-- <div class="uk-modal" id="feedback">
     <div class="uk-modal-dialog uk-modal-dialog-large">
         <div class="uk-modal-header">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</div>
         
@@ -138,6 +139,51 @@
 		</form>		
 
     </div>
+</div> -->
+
+<div class="screen-feedback" hidden>
+    <div class="uk-container uk-container-center">
+		<div class="wrap-feedback">
+
+			<div class="guide-box">
+				<p class="uk-text-center uk-text-bold guide-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
+				<!-- <h1 class="guide uk-text-center">Mời bạn đánh giá để giúp chúng tôi cải thiện chất lượng dịch vụ</h1> -->
+			</div>
+
+			<form class="uk-form feedback-form">
+
+				<div class="uk-form-row">
+				    <textarea cols="" rows="6" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"></textarea>
+				</div>
+				
+				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+				<div class="uk-form-row">
+					<div class="uk-form-controls">
+						<label><input type="radio" name="gender"> Anh</label>
+						<label><input type="radio" name="gender"> Chị</label>
+					</div>
+				</div>
+
+				<div class="uk-form-row">
+				    <div class="uk-grid">
+				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên">
+				        </div>
+				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
+				        </div>
+				    </div>
+				</div>
+
+		        <div class="uk-form-row">
+					<button class="uk-button uk-width-1-1 uk-button-primary">
+						<span class="uk-text-bold uk-text-uppercase text-roar">Gửi phản hồi</span>
+						<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
+					</button>
+		        </div>
+			</form>		
+		</div>
+    </div>
 </div>
 
 
@@ -172,6 +218,17 @@
 		//Hide Show Element
 		$(".screen-magic").hide();
 		$(".screen-topic").show();
+
+	});
+
+	$(".open-feedback").click(function(){
+
+		//A beep
+		playSound();
+
+		//Hide Show Element
+		$(".screen-topic").hide();
+		$(".screen-feedback").show();
 
 	});
 

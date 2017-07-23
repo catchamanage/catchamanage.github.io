@@ -423,6 +423,35 @@ html,body{
 
 }
 
+/*Feedback*/
+.screen-feedback{
+    height: 100%;
+    width: 100%;
+    background: $drank;
+
+    .wrap-feedback{
+        background: $white;
+        border-radius: 5px;
+        margin-top: 15px;
+
+        .guide-box{
+            background: $yellow;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding: 10px;
+
+            .guide-text{
+                margin: 0;
+            }
+        }
+
+        .feedback-form{
+            padding: 15px;
+        }
+    }
+}
+
+
 
 .help-block{
     margin-top: 15px;
