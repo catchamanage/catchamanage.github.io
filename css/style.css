@@ -293,10 +293,13 @@ html, body {
     margin-top: 3px; }
 
 /*Panel*/
+.panel-box {
+  margin-left: -15px; }
+
 .panel {
-  margin-top: 10px;
   border-top-left-radius: 15px;
-  border-top-right-radius: 15px; }
+  border-top-right-radius: 15px;
+  margin-top: 10px; }
   .panel .panel-name {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -309,13 +312,13 @@ html, body {
     overflow-y: scroll;
     height: calc( 100vh - 150px); }
     .panel .panel-body .item {
-      padding: 5px 3px;
+      padding: 6px 3px;
       border-top: 1px solid #dddddd;
       border-left: 1px solid #dddddd;
       border-right: 1px solid #dddddd; }
       .panel .panel-body .item img {
-        width: 45px;
-        height: 45px; }
+        width: 40px;
+        height: 40px; }
       .panel .panel-body .item:last-child {
         border-bottom: 1px solid #dddddd; }
 
