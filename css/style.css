@@ -299,6 +299,10 @@ html, body {
   padding-top: 5px;
   margin-bottom: -5px; }
 
+.text-roar + .text-rule {
+  padding-top: 7px;
+  margin-bottom: 7px; }
+
 .text-rule {
   opacity: 0.9; }
 

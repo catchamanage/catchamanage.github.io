@@ -90,7 +90,7 @@
 		<div class="uk-grid">
 			<div class="uk-width-1-2">
 				<!-- <button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold" data-uk-modal="{target:'#feedback'}">Góp ý kiến</button> -->
-				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold open-feedback">Góp ý kiến</button>
+				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold open-feedback">Góp ý thêm</button>
 			</div>
 			<div class="uk-width-1-2">
 				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Gửi phản hồi</button>
@@ -153,7 +153,7 @@
 			<form class="uk-form feedback-form">
 
 				<div class="uk-form-row">
-				    <textarea cols="" rows="6" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"></textarea>
+				    <textarea cols="" rows="5" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"></textarea>
 				</div>
 				
 				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
@@ -166,11 +166,18 @@
 
 				<div class="uk-form-row">
 				    <div class="uk-grid">
-				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
 				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên">
 				        </div>
+				    </div>
+				</div>
+				<div class="uk-form-row">
+				    <div class="uk-grid">
 				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
 				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
+				        </div>
+				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
+				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Email">
 				        </div>
 				    </div>
 				</div>
@@ -228,13 +235,22 @@
 
 		//Hide Show Element
 		$(".screen-topic").hide();
-		$(".screen-feedback").show();
+		// $(".screen-feedback").show();
+		screenFeedback();
 
 	});
 
 	//Play when customer tap
 	function playSound () {
 	    document.getElementById('beeptap').play();
+	}
+
+
+	function screenFeedback(){
+
+		$(".screen-feedback").show();
+		$("html").css( "background", "rgb(0, 0, 0)" );
+		
 	}
 
 </script>
