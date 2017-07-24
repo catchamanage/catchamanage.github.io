@@ -347,31 +347,12 @@ html,body{
         .guide{
             margin: 0px;
             color: $blue-drank;
-            font-size: 1.8rem;
-            line-height: 2.4rem;
             font-weight: bold;
         }
     }
 }
 
 
-/*iPhone 6 Rotate*/
-@media screen and (max-width: 667px){
-
-    .screen-topic{
-        
-        .guide-box{
-
-            .guide{
-
-                font-size: 2.2rem;
-                line-height: 3.0rem;
-            }
-        }
-    }
-
-
-}
 
 .control-center{
     position: fixed;
@@ -440,23 +421,6 @@ html,body{
     }
 }
 
-/*iPhone 6 Rotate*/
-@media screen and (max-width: 667px){
-
-    .screen-topic{
-        
-        .guide-box{
-
-            .guide{
-
-                font-size: 2.2rem;
-                line-height: 3.0rem;
-            }
-        }
-    }
-
-
-}
 
 /*Feedback*/
 .screen-feedback{

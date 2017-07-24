@@ -235,15 +235,8 @@ html, body {
   .screen-topic .guide-box .guide {
     margin: 0px;
     color: #171c2f;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
     font-weight: bold; }
 
-/*iPhone 6 Rotate*/
-@media screen and (max-width: 667px) {
-  .screen-topic .guide-box .guide {
-    font-size: 2.2rem;
-    line-height: 3.0rem; } }
 .control-center {
   position: fixed;
   height: 48px;
@@ -290,11 +283,6 @@ html, body {
   .topic-box .topic-item .topic-note {
     margin-top: 3px; }
 
-/*iPhone 6 Rotate*/
-@media screen and (max-width: 667px) {
-  .screen-topic .guide-box .guide {
-    font-size: 2.2rem;
-    line-height: 3.0rem; } }
 /*Feedback*/
 .screen-feedback {
   height: 100%;
