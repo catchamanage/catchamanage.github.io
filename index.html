@@ -145,16 +145,16 @@
 				
 				<div class="panel-body">
 					<div class="item">
-					    <img src="images/reason/birthday-cake.png">
+					    <img src="images/reason/birthday-cake.png"  class="reason-thumbnail">
 					    <span class="uk-text-middle">Phục vụ</span>
 					</div>
 
 					<div class="item">
-					    <img src="images/reason/cocktail.png">
+					    <img src="images/reason/cocktail.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Hành xử</span>
 					</div>
 					<div class="item">
-					    <img src="images/reason/spaguetti.png">
+					    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Chuyên nghiệp</span>
 					</div>
 				</div>
@@ -168,16 +168,16 @@
 				
 				<div class="panel-body">
 					<div class="item">
-					    <img src="images/reason/birthday-cake.png">
+					    <img src="images/reason/birthday-cake.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Đồ ăn</span>
 					</div>
 
 					<div class="item">
-					    <img src="images/reason/cocktail.png">
+					    <img src="images/reason/cocktail.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Đồ uống</span>
 					</div>
 					<div class="item">
-					    <img src="images/reason/spaguetti.png">
+					    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Đồ ăn</span>
 					</div>
 				</div>
@@ -191,16 +191,16 @@
 				
 				<div class="panel-body">
 					<div class="item">
-					    <img src="images/reason/birthday-cake.png">
+					    <img src="images/reason/birthday-cake.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">View</span>
 					</div>
 
 					<div class="item">
-					    <img src="images/reason/cocktail.png">
+					    <img src="images/reason/cocktail.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Bàn ghế</span>
 					</div>
 					<div class="item">
-					    <img src="images/reason/spaguetti.png">
+					    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Mùi hương</span>
 					</div>
 				</div>
@@ -214,20 +214,20 @@
 				
 				<div class="panel-body">
 					<div class="item">
-					    <img src="images/reason/birthday-cake.png">
+					    <img src="images/reason/birthday-cake.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Bảo vệ</span>
 					</div>
 
 					<div class="item">
-					    <img src="images/reason/cocktail.png">
+					    <img src="images/reason/cocktail.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Thời gian chờ</span>
 					</div>
 					<div class="item">
-					    <img src="images/reason/spaguetti.png">
+					    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Gửi xe</span>
 					</div>
 					<div class="item">
-					    <img src="images/reason/spaguetti.png">
+					    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
 					    <span class="uk-text-middle">Thanh toán</span>
 					</div>
 				</div>
@@ -380,6 +380,10 @@
 		$(".screen-topic").hide();
 
 		$(".screen-reason").show();
+	});
+
+	$(".item").click(function(){
+		$(this).toggleClass("active");
 	});
 
 </script>
