@@ -432,6 +432,45 @@ html,body{
 }
 
 
+/*Panel*/
+.panel{
+    margin-top: 10px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+
+
+    .panel-name{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background: $gray-light;
+        color: $drank;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .panel-body{
+        padding-left: 0px;
+        overflow-y: scroll;
+        height: calc( 100vh - 150px);
+        .item{
+            padding: 5px 3px;
+            border-top: 1px solid $gray-light;
+            border-left: 1px solid $gray-light;
+            border-right: 1px solid $gray-light;
+
+            img{
+                width: 45px;
+                height: 45px;
+            }
+
+            &:last-child{
+                border-bottom: 1px solid $gray-light;
+            }
+        }
+    }
+}
+
+
 /*Feedback*/
 .screen-feedback{
     height: 100%;

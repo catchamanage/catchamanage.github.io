@@ -292,6 +292,33 @@ html, body {
   .topic-box .topic-item .topic-note {
     margin-top: 3px; }
 
+/*Panel*/
+.panel {
+  margin-top: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; }
+  .panel .panel-name {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #dddddd;
+    color: black;
+    text-align: center;
+    padding: 8px 0; }
+  .panel .panel-body {
+    padding-left: 0px;
+    overflow-y: scroll;
+    height: calc( 100vh - 150px); }
+    .panel .panel-body .item {
+      padding: 5px 3px;
+      border-top: 1px solid #dddddd;
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd; }
+      .panel .panel-body .item img {
+        width: 45px;
+        height: 45px; }
+      .panel .panel-body .item:last-child {
+        border-bottom: 1px solid #dddddd; }
+
 /*Feedback*/
 .screen-feedback {
   height: 100%;
