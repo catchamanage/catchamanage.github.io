@@ -51,7 +51,6 @@
 
 	<div class="guide-box">
 		<p class="guide uk-text-center">Lý do nào bạn không hài lòng? Mách chúng tôi để phục vụ bạn tốt hơn</p>
-		<!-- <h1 class="guide uk-text-center">Mời bạn đánh giá để giúp chúng tôi cải thiện chất lượng dịch vụ</h1> -->
 	</div>
 
 
@@ -122,7 +121,7 @@
 				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold open-feedback">Góp ý thêm</button>
 			</div>
 			<div class="uk-width-1-2">
-				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Tiếp</button>
+				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold open-reason">Tiếp</button>
 			</div>
 		</div>
 	</div>
@@ -131,7 +130,12 @@
 
 
 <div class="screen-reason" hidden>
+	<div class="guide-box">
+		<p class="guide uk-text-center">Hãy cho chúng tôi biết lý do cụ thể</p>
+	</div>
 	
+	
+
 </div>
 
 
@@ -139,9 +143,8 @@
     <div class="uk-container uk-container-center">
 		<div class="wrap-feedback">
 
-			<div class="guide-box">
-				<p class="uk-text-center uk-text-bold guide-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
-				<!-- <h1 class="guide uk-text-center">Mời bạn đánh giá để giúp chúng tôi cải thiện chất lượng dịch vụ</h1> -->
+			<div class="title-box">
+				<p class="uk-text-center uk-text-bold title-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
 			</div>
 
 			<form class="uk-form feedback-form">
@@ -229,7 +232,6 @@
 
 		//Hide Show Element
 		$(".screen-topic").hide();
-		// $(".screen-feedback").show();
 		screenFeedback();
 
 	});
@@ -247,11 +249,17 @@
 
 	}
 
+
 	$(".topic-item").click(function(){
 		playSound();
 		var topic = $(this).data("topic");
 		$(this).find( ".wrap-overlay" ).toggleClass("active");
 		// alert("Topic: "+ topic);
+	});
+
+	$(".open-reason").click(function(){
+		$(".screen-topic").hide();
+		$(".screen-reason").show();
 	});
 
 </script>

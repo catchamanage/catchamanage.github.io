@@ -237,6 +237,15 @@ html, body {
     color: #171c2f;
     font-weight: bold; }
 
+.guide-box {
+  background: #ffc801;
+  padding: 8px 15px;
+  border-bottom: 1px solid #dddddd; }
+  .guide-box .guide {
+    margin: 0px;
+    color: #171c2f;
+    font-weight: bold; }
+
 .control-center {
   position: fixed;
   height: 48px;
@@ -292,12 +301,12 @@ html, body {
     background: #fefefe;
     border-radius: 5px;
     margin-top: 15px; }
-    .screen-feedback .wrap-feedback .guide-box {
+    .screen-feedback .wrap-feedback .title-box {
       background: #ffc801;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       padding: 10px; }
-      .screen-feedback .wrap-feedback .guide-box .guide-text {
+      .screen-feedback .wrap-feedback .title-box .title-text {
         margin: 0; }
     .screen-feedback .wrap-feedback .feedback-form {
       padding: 15px; }

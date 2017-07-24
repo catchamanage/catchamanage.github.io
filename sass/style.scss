@@ -352,6 +352,16 @@ html,body{
     }
 }
 
+    .guide-box{
+        background: $yellow;
+        padding: 8px 15px;
+        border-bottom: 1px solid $gray-light;
+        .guide{
+            margin: 0px;
+            color: $blue-drank;
+            font-weight: bold;
+        }
+    }
 
 
 .control-center{
@@ -433,13 +443,13 @@ html,body{
         border-radius: 5px;
         margin-top: 15px;
 
-        .guide-box{
+        .title-box{
             background: $yellow;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             padding: 10px;
 
-            .guide-text{
+            .title-text{
                 margin: 0;
             }
         }
