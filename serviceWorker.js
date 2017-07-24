@@ -1,8 +1,8 @@
 // Cache names
 
-var dataCacheName = 'catchaData-v1.1.6'
+var dataCacheName = 'catchaData-v1.1.1'
 
-var cacheName = 'catchaPWA-1.6'
+var cacheName = 'catchaPWA-1.1'
 
 // Application shell files to be cached
 
