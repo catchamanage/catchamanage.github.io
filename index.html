@@ -58,26 +58,56 @@
 	<div class="uk-container uk-container-center topic-box">
 		<div class="uk-grid uk-text-center">
 		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-react="1">
-			     	<img src="images/topic/chef.png" alt="" class="topic">
+		    	<div class="topic-item" data-topic="1">
+		    		<div class=" box-overlay">
+				     	<img src="images/topic/chef.png" alt="Nhân viên" class="topic">
+
+				     	<div class="wrap-overlay active">
+			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
+							<span class="overlay"></span>
+				     	</div>
+		    		</div>
 			     	<p class="topic-note uk-text-muted">Nhân viên</p>
 		    	</div>
 		    </div>
 		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-react="2">
-		       		<img src="images/topic/burger-flat.png" alt="" class="topic">
+		    	<div class="topic-item" data-topic="2">
+		    		<div class="box-overlay">
+			       		<img src="images/topic/burger-flat.png" alt="" class="topic">
+
+				     	<div class="wrap-overlay active">
+			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
+							<span class="overlay"></span>
+				     	</div>
+		    		</div>
 		       		<p class="topic-note uk-text-muted">Thực đơn</p>
 		    	</div>
 		    </div>
 		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-react="3">
-		   	   		<img src="images/topic/grocery.png" alt="" class="topic">
+		    	<div class="topic-item" data-topic="3">
+		    		<div class="box-overlay">
+			   	   		<img src="images/topic/grocery.png" alt="" class="topic">
+
+				     	<div class="wrap-overlay active">
+			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
+							<span class="overlay"></span>
+				     	</div>
+		    		</div>
+		    	
 		   	   		<p class="topic-note uk-text-muted">Không gian</p>
 		    	</div>
 		    </div>
 		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-react="3">
-		   	   		<img src="images/topic/salt.png" alt="" class="topic">
+		    	<div class="topic-item" data-topic="3">
+		    		<div class="box-overlay">
+			   	   		<img src="images/topic/salt.png" alt="" class="topic">
+
+				     	<div class="wrap-overlay active">
+			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
+							<span class="overlay"></span>
+				     	</div>
+		    		</div>
+
 		   	   		<p class="topic-note uk-text-muted">Khẩu vị</p>
 		    	</div>
 		    </div>
@@ -93,7 +123,7 @@
 				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold open-feedback">Góp ý thêm</button>
 			</div>
 			<div class="uk-width-1-2">
-				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Gửi phản hồi</button>
+				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold">Tiếp</button>
 			</div>
 		</div>
 	</div>
@@ -241,7 +271,7 @@
 	});
 
 	//Play when customer tap
-	function playSound () {
+	function playSound() {
 	    document.getElementById('beeptap').play();
 	}
 
@@ -250,8 +280,15 @@
 
 		$(".screen-feedback").show();
 		$("html").css( "background", "rgb(0, 0, 0)" );
-		
+
 	}
+
+	$(".topic-item").click(function(){
+		playSound();
+		var topic = $(this).data("topic");
+		$(this).find( ".wrap-overlay" ).toggleClass("active");
+		// alert("Topic: "+ topic);
+	});
 
 </script>
 

@@ -230,13 +230,14 @@ html, body {
 /*Topic*/
 .screen-topic .guide-box {
   background: #ffc801;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-bottom: 1px solid #dddddd; }
   .screen-topic .guide-box .guide {
     margin: 0px;
     color: #171c2f;
-    font-size: 2.4rem;
-    line-height: 3.2rem; }
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: bold; }
 
 /*iPhone 6 Rotate*/
 @media screen and (max-width: 667px) {
@@ -245,24 +246,49 @@ html, body {
     line-height: 3.0rem; } }
 .control-center {
   position: fixed;
-  height: 55px;
+  height: 48px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-  padding: 5px 15px; }
+  padding: 3px 15px; }
   .control-center .uk-button {
-    height: 45px;
+    height: 43px;
     font-size: 1.8rem; }
 
 .topic-box {
   padding: 15px 0px; }
-  .topic-box .topic-item {
-    cursor: pointer; }
-    .topic-box .topic-item .topic {
-      width: 128px; }
-    .topic-box .topic-item .topic-note {
-      margin-top: 3px; }
+  .topic-box .topic-item .box-overlay {
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    position: relative; }
+    .topic-box .topic-item .box-overlay .active {
+      display: none; }
+    .topic-box .topic-item .box-overlay .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9; }
+    .topic-box .topic-item .box-overlay .checked {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      z-index: 10; }
+  .topic-box .topic-item .topic {
+    border-radius: 100%;
+    cursor: pointer;
+    width: 128px;
+    height: 128px; }
+    .topic-box .topic-item .topic:focus, .topic-box .topic-item .topic:active {
+      outline: none; }
+  .topic-box .topic-item .topic-note {
+    margin-top: 3px; }
 
 /*iPhone 6 Rotate*/
 @media screen and (max-width: 667px) {
