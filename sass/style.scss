@@ -159,7 +159,11 @@ $red-light: rgba(230, 33, 23, 1);
 html{
     font-size: 62.5%;
     background: $background;
-    -webkit-text-size-adjust: none
+    -webkit-text-size-adjust: none;
+
+    /*Disable coppy*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 body{
