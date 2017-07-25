@@ -334,7 +334,7 @@ html, body {
 
 .choice-reason {
   overflow-y: scroll;
-  height: calc( 100vh - 20px); }
+  height: calc(100vh); }
   .choice-reason .choice-name {
     background: #dddddd;
     color: black;
@@ -361,19 +361,30 @@ html, body {
   height: 100%;
   width: 100%;
   background: black; }
-  .screen-feedback .wrap-feedback {
-    background: #fefefe;
-    border-radius: 5px;
-    margin-top: 15px; }
-    .screen-feedback .wrap-feedback .title-box {
-      background: #ffc801;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      padding: 10px; }
-      .screen-feedback .wrap-feedback .title-box .title-text {
-        margin: 0; }
-    .screen-feedback .wrap-feedback .feedback-form {
-      padding: 15px; }
+
+.wrap-feedback {
+  background: #fefefe;
+  border-radius: 5px;
+  margin-top: 15px; }
+  .wrap-feedback .title-box {
+    background: #ffc801;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px; }
+    .wrap-feedback .title-box .title-text {
+      margin: 0; }
+  .wrap-feedback .feedback-form {
+    padding: 15px; }
+
+/*Screen Reason Feedback*/
+.screen-reason .wrap-feedback {
+  margin-top: 0px; }
+  .screen-reason .wrap-feedback .title-box {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+  .screen-reason .wrap-feedback .grid-feedback {
+    overflow-y: scroll;
+    height: calc( 100vh - 70px); }
 
 .help-block {
   margin-top: 15px;

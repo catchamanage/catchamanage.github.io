@@ -491,7 +491,7 @@ html,body{
 .choice-reason{
     
     overflow-y: scroll;
-    height: calc( 100vh - 20px);
+    height: calc(100vh);
 
     .choice-name{
         background: $gray-light;
@@ -534,29 +534,48 @@ html,body{
     height: 100%;
     width: 100%;
     background: $drank;
+}
 
-    .wrap-feedback{
-        background: $white;
-        border-radius: 5px;
-        margin-top: 15px;
+.wrap-feedback{
+    background: $white;
+    border-radius: 5px;
+    margin-top: 15px;
 
-        .title-box{
-            background: $yellow;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            padding: 10px;
+    .title-box{
+        background: $yellow;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 10px;
 
-            .title-text{
-                margin: 0;
-            }
+        .title-text{
+            margin: 0;
         }
+    }
 
-        .feedback-form{
-            padding: 15px;
-        }
+    .feedback-form{
+        padding: 15px;
     }
 }
 
+/*Screen Reason Feedback*/
+.screen-reason{
+    
+    .wrap-feedback{
+        margin-top: 0px;
+
+        .title-box{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+        .grid-feedback{
+
+            overflow-y: scroll;
+            height: calc( 100vh - 70px);
+
+        }
+    }
+}
 
 
 .help-block{
