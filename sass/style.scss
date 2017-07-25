@@ -498,7 +498,7 @@ html,body{
         background: $gray-light;
         color: $drank;
         text-align: center;
-        padding: 8px 0;
+        padding: 10px 0;
     }
 
     .choice-body{
@@ -520,6 +520,12 @@ html,body{
         .item.active{
             background: url('../images/icon/checked_reason_28.png') no-repeat right center;
             background-size: 18px 18px;
+
+            .reason-thumbnail{
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+                opacity: 0.8
+            }
         }
     }
 }

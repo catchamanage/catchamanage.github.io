@@ -340,7 +340,7 @@ html, body {
     background: #dddddd;
     color: black;
     text-align: center;
-    padding: 8px 0; }
+    padding: 10px 0; }
   .choice-reason .choice-body {
     padding-left: 0px; }
     .choice-reason .choice-body .item {
@@ -354,6 +354,11 @@ html, body {
     .choice-reason .choice-body .item.active {
       background: url("../images/icon/checked_reason_28.png") no-repeat right center;
       background-size: 18px 18px; }
+      .choice-reason .choice-body .item.active .reason-thumbnail {
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        opacity: 0.8; }
 
 /*Feedback*/
 .screen-feedback {
