@@ -522,9 +522,9 @@ html,body{
             background-size: 18px 18px;
 
             .reason-thumbnail{
-                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-                filter: grayscale(100%);
-                opacity: 0.8
+                -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(30%);
+                opacity: 1;
             }
         }
     }
