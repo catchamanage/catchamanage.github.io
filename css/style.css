@@ -208,7 +208,8 @@ html, body {
 .word-tip {
   color: #999999;
   font-size: 3.2rem;
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-bottom: 6%; }
 
 @media (max-width: 568px) {
   .word-tip {
