@@ -19,13 +19,13 @@
 
 <div class="screen-magic">
 	<div class="uk-container uk-container-center">
-		<h1 class="word-tip uk-text-center">Hôm nay bạn cảm thấy thế nào?</h1>
+		<h1 class="word-tip uk-text-center">Bạn cảm thấy dịch vụ hôm nay thế nào?</h1>
 
 		<div class="uk-grid box-emoji uk-text-center">
 		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
 		    	<div class="emoji-item" data-react="1">
 			     	<img src="images/emoji/in-love.png" alt="" class="emoji">
-			     	<p class="emoji-note uk-text-muted">Rất phấn khích</p>
+			     	<p class="emoji-note uk-text-muted">Yêu thích</p>
 		    	</div>
 		    </div>
 		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
@@ -37,7 +37,7 @@
 		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
 		    	<div class="emoji-item" data-react="3">
 		   	   		<img src="images/emoji/mad.png" alt="" class="emoji">
-		   	   		<p class="emoji-note uk-text-muted">Không vui</p>
+		   	   		<p class="emoji-note uk-text-muted">Không thích</p>
 		    	</div>
 		    </div>
 		</div>
@@ -301,6 +301,28 @@
 	// });
 
 
+
+	function startTimer(i = 15) {
+
+		var i = i;
+	    var countdownTimer = setInterval(function() {
+	    	
+			clearInterval(countdownTimer);
+
+	        console.log(i);
+	        i = i - 1;
+
+	        if (i <= 0) {
+	            clearInterval(countdownTimer);
+	            location.reload();
+	        }
+
+	    }, 1000);
+
+	}
+
+
+
 	//Tap Emotion
 	$(".emoji-item").click(function(){
 
@@ -330,6 +352,9 @@
 		$(".screen-magic").hide();
 		$(".screen-topic").show();
 
+		//Count down timer 15 sec
+		startTimer(15);
+
 	});
 
 	$(".open-feedback").click(function(){
@@ -342,6 +367,10 @@
 		$(".screen-reason").hide();
 
 		screenFeedback();
+
+		//Count down timer 3 minute
+
+		startTimer(180);
 
 	});
 
@@ -363,13 +392,16 @@
 		playSound();
 		var topic = $(this).data("topic");
 		$(this).find( ".wrap-overlay" ).toggleClass("active");
-		// alert("Topic: "+ topic);
+		
 	});
 
 	$(".open-reason").click(function(){
 		$(".screen-topic").hide();
 
 		$(".screen-reason").show();
+
+		//Count down timer 3 minute
+		startTimer(180);
 	});
 
 	$(".item").click(function(){

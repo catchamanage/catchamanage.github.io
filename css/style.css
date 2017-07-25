@@ -207,7 +207,7 @@ html, body {
     /* or overflow:auto; if you want scrollbars */ } }
 .word-tip {
   color: #999999;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   margin-top: 5%; }
 
 @media (max-width: 568px) {
@@ -357,7 +357,7 @@ html, body {
       .choice-reason .choice-body .item.active .reason-thumbnail {
         -webkit-filter: grayscale(50%);
         /* Safari 6.0 - 9.0 */
-        filter: grayscale(30%);
+        filter: grayscale(50%);
         opacity: 1; }
 
 /*Feedback*/
