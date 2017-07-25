@@ -492,6 +492,7 @@ html,body{
     
     overflow-y: scroll;
     height: calc(100vh);
+    border-right: 1px solid $gray-light;
 
     .choice-name{
         background: $gray-light;
@@ -504,9 +505,7 @@ html,body{
         padding-left: 0px;
         .item{
             padding: 6px 5px;
-            border-top: 1px solid $gray-light;
-            border-left: 1px solid $gray-light;
-            border-right: 1px solid $gray-light;
+            border-bottom: 1px solid $gray-light;
 
             img.reason-thumbnail{
                 width: 40px;

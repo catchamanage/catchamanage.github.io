@@ -334,7 +334,8 @@ html, body {
 
 .choice-reason {
   overflow-y: scroll;
-  height: calc(100vh); }
+  height: calc(100vh);
+  border-right: 1px solid #dddddd; }
   .choice-reason .choice-name {
     background: #dddddd;
     color: black;
@@ -344,9 +345,7 @@ html, body {
     padding-left: 0px; }
     .choice-reason .choice-body .item {
       padding: 6px 5px;
-      border-top: 1px solid #dddddd;
-      border-left: 1px solid #dddddd;
-      border-right: 1px solid #dddddd; }
+      border-bottom: 1px solid #dddddd; }
       .choice-reason .choice-body .item img.reason-thumbnail {
         width: 40px;
         height: 40px; }
