@@ -199,6 +199,13 @@ html, body {
   width: 100%;
   background: #fefefe; }
 
+/*Screen scancode*/
+.screen-scancode {
+  height: 100%;
+  width: 100%;
+  background: #ffc801; }
+
+/*Magic Emoji*/
 .screen-magic {
   height: 100%;
   width: 100%;
