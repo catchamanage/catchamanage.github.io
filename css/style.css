@@ -409,4 +409,36 @@ html, body {
 .text-rule {
   opacity: 0.9; }
 
+/*Screen Thanks*/
+.screen-thanks {
+  height: 100%;
+  width: 100%;
+  background: black;
+  position: relative; }
+  .screen-thanks .close-grab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    padding: 10px 10px 30px 30px; }
+  .screen-thanks .wrap-thanks {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .screen-thanks .wrap-thanks .img-checked {
+      width: 80px; }
+    .screen-thanks .wrap-thanks .say-thanks, .screen-thanks .wrap-thanks p {
+      color: #fefefe; }
+    .screen-thanks .wrap-thanks .say-thanks {
+      font-size: 2.2rem; }
+    .screen-thanks .wrap-thanks .tm-button-download {
+      margin: 15px 0;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border: none;
+      color: #2ba3d4 !important;
+      padding: 0 20px;
+      line-height: 40px;
+      font-size: 18px;
+      width: 219px; }
+
 /*# sourceMappingURL=style.css.map */

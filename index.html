@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="screen-magic">
+<div class="screen-magic" hidden>
 	<div class="uk-container uk-container-center">
 		<h1 class="word-tip uk-text-center">Bạn cảm thấy dịch vụ hôm nay thế nào?</h1>
 
@@ -46,8 +46,6 @@
 	<!-- <a href="reg.html">Catcha.vn</a> -->
 </div>
 
-<!-- http://www.soundjay.com/button/beep-07.wav -->
-<audio id="beeptap" src="sound/button-16.mp3"></audio>
 
 <div class="screen-topic" hidden>
 
@@ -282,7 +280,6 @@
 </div>
 
 
-
 <div class="screen-feedback" hidden>
     <div class="uk-container uk-container-center">
 		<div class="wrap-feedback">
@@ -292,33 +289,26 @@
 			</div>
 
 			<form class="uk-form feedback-form">
-
-				<div class="uk-form-row">
-				    <textarea cols="" rows="5" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"></textarea>
-				</div>
 				
 				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+
+				<div class="uk-form-row">
+				    <div class="uk-grid">
+				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+				        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
+				        </div>
+				    </div>
+				</div>
 				<div class="uk-form-row">
 					<div class="uk-form-controls">
 						<label><input type="radio" name="gender"> Anh</label>
 						<label><input type="radio" name="gender"> Chị</label>
 					</div>
 				</div>
-
 				<div class="uk-form-row">
 				    <div class="uk-grid">
 				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
 				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên">
-				        </div>
-				    </div>
-				</div>
-				<div class="uk-form-row">
-				    <div class="uk-grid">
-				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
-				        </div>
-				        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Email">
 				        </div>
 				    </div>
 				</div>
@@ -334,24 +324,38 @@
     </div>
 </div>
 
+<div class="screen-thanks">
+	<div class="uk-container uk-container-center uk-text-center">
+		<a href="#" class="close-grab"><img src="images/icon/close_white.png" alt=""></a>
+		<div class="wrap-thanks">
+			<img src="images/icon/checked_white.png" alt="" class="img-checked">
+			<h1 class="say-thanks">Cảm ơn phản hồi của bạn.</h1>
+			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
+			<a href="" class="uk-button tm-button-download">OK</a>
+		</div>
 
+	</div>
+</div>
+
+
+<audio id="beeptap" src="sound/button-16.mp3"></audio>
 <input type="hidden" id="timer" value=15>
 
 
 
 <script src="scripts/app.js"></script>
 <script>
-	$(document).ready(function () {
-	    //Disable cut copy paste
-	    $('body').bind('cut copy paste', function (e) {
-	        e.preventDefault();
-	    });
+	// $(document).ready(function () {
+	//     //Disable cut copy paste
+	//     $('body').bind('cut copy paste', function (e) {
+	//         e.preventDefault();
+	//     });
 	   
-	    //Disable mouse right click
-	    $("body").on("contextmenu",function(e){
-	        return false;
-	    });
-	});
+	//     //Disable mouse right click
+	//     $("body").on("contextmenu",function(e){
+	//         return false;
+	//     });
+	// });
 
 
 	var countdownTimer;
