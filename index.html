@@ -17,7 +17,10 @@
 </head>
 <body>
 
-<div class="screen-magic" hidden>
+
+
+
+<div class="screen-magic">
 	<div class="uk-container uk-container-center">
 		<h1 class="word-tip uk-text-center">Bạn cảm thấy dịch vụ hôm nay thế nào?</h1>
 
@@ -266,10 +269,10 @@
 					</div>
 
 			        <div class="uk-form-row">
-						<button class="uk-button uk-width-1-1 uk-button-primary">
+						<a class="uk-button uk-width-1-1 uk-button-primary say-submmit">
 							<span class="uk-text-bold uk-text-uppercase text-roar">Hoàn Thành</span>
 							<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
-						</button>
+						</a>
 			        </div>
 				</form>		
 			</div>
@@ -295,7 +298,7 @@
 				<div class="uk-form-row">
 				    <div class="uk-grid">
 				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
-				        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
+				        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại" maxlength="20">
 				        </div>
 				    </div>
 				</div>
@@ -314,24 +317,24 @@
 				</div>
 
 		        <div class="uk-form-row">
-					<button class="uk-button uk-width-1-1 uk-button-primary">
-						<span class="uk-text-bold uk-text-uppercase text-roar">Gửi phản hồi</span>
+					<a class="uk-button uk-width-1-1 uk-button-primary say-submmit">
+						<span class="uk-text-bold uk-text-uppercase text-roar">Xong</span>
 						<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
-					</button>
+					</a>
 		        </div>
 			</form>		
 		</div>
     </div>
 </div>
 
-<div class="screen-thanks">
+<div class="screen-thanks" hidden>
 	<div class="uk-container uk-container-center uk-text-center">
-		<a href="#" class="close-grab reload"><img src="images/icon/close_white.png" alt=""></a>
+		<a href="javascript:void(0);" class="close-grab reload"><img src="images/icon/close_white.png" alt=""></a>
 		<div class="wrap-thanks">
 			<img src="images/icon/checked_white.png" alt="" class="img-checked">
 			<h1 class="say-thanks">Cảm ơn phản hồi của bạn.</h1>
 			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
-			<a href="" class="uk-button tm-button-download reload">OK</a>
+			<a href="javascript:void(0);" class="uk-button tm-button-download reload">OK</a>
 		</div>
 
 	</div>
@@ -388,10 +391,10 @@
 		var string = "";
 		switch(react) {
 		    case 1:
-		        string = "Bạn yêu thích chúng tôi ở điều gì";
+		        string = "Bạn yêu thích chúng tôi ở điều gì!";
 		        break;
 		    case 2:
-		        string = "Bạn hài lòng chúng tôi về điều gì";
+		        string = "Bạn hài lòng chúng tôi về điều gì!";
 		        break;
 		    case 3:
 		        string = "Chọn nguyên nhân khiến bạn không hài lòng!";
@@ -427,25 +430,50 @@
 		//A beep
 		playSound();
 
-		//Hide Show Element
-		$(".screen-topic").hide();
-		$(".screen-reason").hide();
-
 		screenFeedback();
 
-		//Set time countdown is 3 minute
-		$("#timer").val(180);
+
+	});
+
+
+	$(".say-submmit").click(function(){
+
+		//A beep
+		playSound();
+
+		screenThanks();
 
 	});
 
 
 	function screenFeedback(){
 
+		//Hide Screen other
+		$(".screen-topic").hide();
+		$(".screen-reason").hide();
+
+		//Show Feedback
 		$(".screen-feedback").show();
 		$("html").css( "background", "rgb(0, 0, 0)" );
 
+		//Set time countdown is 3 minute
+		$("#timer").val(80);
 	}
 
+
+	function screenThanks(){
+
+		//Hide Screen other
+		$(".screen-feedback").hide();
+		$(".screen-reason").hide();
+
+		//Show Feedback
+		$(".screen-thanks").show();
+		$("html").css( "background", "rgb(0, 0, 0)" );
+
+		//Set time countdown is 5 sec
+		$("#timer").val(3);
+	}
 
 	$(".topic-item").click(function(){
 		playSound();
