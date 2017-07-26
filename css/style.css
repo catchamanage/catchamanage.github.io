@@ -413,7 +413,7 @@ html, body {
 .screen-thanks {
   height: 100%;
   width: 100%;
-  background: black;
+  background: #0655a9;
   position: relative; }
   .screen-thanks .close-grab {
     position: absolute;
@@ -440,5 +440,8 @@ html, body {
       line-height: 40px;
       font-size: 18px;
       width: 219px; }
+
+.reload {
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

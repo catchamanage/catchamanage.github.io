@@ -610,7 +610,7 @@ html,body{
 .screen-thanks{
     height: 100%;
     width: 100%;
-    background: $drank;
+    background: #0655a9;
 
     position: relative;
 
@@ -651,4 +651,8 @@ html,body{
             width: 219px;
         }
     }
+}
+
+.reload{
+    cursor: pointer;
 }

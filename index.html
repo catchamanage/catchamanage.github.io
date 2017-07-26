@@ -326,12 +326,12 @@
 
 <div class="screen-thanks">
 	<div class="uk-container uk-container-center uk-text-center">
-		<a href="#" class="close-grab"><img src="images/icon/close_white.png" alt=""></a>
+		<a href="#" class="close-grab reload"><img src="images/icon/close_white.png" alt=""></a>
 		<div class="wrap-thanks">
 			<img src="images/icon/checked_white.png" alt="" class="img-checked">
 			<h1 class="say-thanks">Cảm ơn phản hồi của bạn.</h1>
 			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
-			<a href="" class="uk-button tm-button-download">OK</a>
+			<a href="" class="uk-button tm-button-download reload">OK</a>
 		</div>
 
 	</div>
@@ -376,8 +376,6 @@
 	    }, 1000);
 
 	}
-
-
 
 	//Tap Emotion
 	$(".emoji-item").click(function(){
@@ -441,12 +439,6 @@
 	});
 
 
-	//Play when customer tap
-	function playSound() {
-	    document.getElementById('beeptap').play();
-	}
-
-
 	function screenFeedback(){
 
 		$(".screen-feedback").show();
@@ -466,6 +458,17 @@
 	$(".item").click(function(){
 		$(this).toggleClass("active");
 	});
+
+	//Play when customer tap
+	function playSound() {
+	    document.getElementById('beeptap').play();
+	}
+
+
+	$(".reload").click(function(){
+		location.reload();
+	});
+
 
 </script>
 
