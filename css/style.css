@@ -332,7 +332,6 @@ html, body {
       z-index: 10; }
   .topic-box .topic-item .topic {
     border-radius: 100%;
-    cursor: pointer;
     width: 128px;
     height: 128px; }
     .topic-box .topic-item .topic:focus, .topic-box .topic-item .topic:active {
@@ -422,7 +421,7 @@ html, body {
       overflow: hidden;
       white-space: nowrap;
       cursor: pointer;
-      font-size: 350%;
+      font-size: 300%;
       color: #f1c40f; }
       .star-rating > fieldset:not(:checked) > label:before {
         content: '\f006  '; }

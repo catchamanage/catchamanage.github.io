@@ -485,7 +485,6 @@ html,body{
 
         .topic{
             border-radius: 100%;
-            cursor: pointer;
             width: 128px;
             height: 128px;
 
@@ -622,7 +621,7 @@ $starHoverColour: #f1b90f;
         overflow: hidden;
         white-space: nowrap;
         cursor: pointer;
-        font-size: 350%;
+        font-size: 300%;
         color: $starColour;
         
         &:before {
