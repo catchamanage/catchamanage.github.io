@@ -597,6 +597,64 @@ html,body{
 
 
 
+$starColour: #f1c40f;
+$starHoverColour: #f1b90f;
+
+.star-rating { 
+  font-family: 'FontAwesome'; 
+  margin: 0px auto;
+  
+  > fieldset {
+    border: none;
+    display: inline-block;
+    
+    &:not(:checked) {
+      > input {
+        position: absolute;
+        top: -9999px;
+        clip: rect(0,0,0,0);
+      }
+
+      > label {
+        float: right;
+        width: 1em;
+        padding: 0 .05em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 350%;
+        color: $starColour;
+        
+        &:before {
+          content: '\f006  ';
+        }
+        
+        &:hover,
+        &:hover ~ label {
+          color: $starHoverColour;
+          text-shadow: 0 0 3px $starHoverColour;
+          &:before {
+            content: '\f005  ';
+          }
+        }
+      }
+    }
+    
+    > input:checked {
+      & ~ label {
+        &:before {
+          content: '\f005  ';
+        }
+      }    
+    }    
+
+    > label:active {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
 
 
 /*Feedback*/
