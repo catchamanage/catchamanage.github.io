@@ -413,7 +413,7 @@
 		$(".guide-change").text(string);
 
 		//Hide Show Element
-		$(".screen-magic").hide();
+		hiddenScreen();
 		$(".screen-topic").show();
 
 		//Count down timer Start 15 sec
@@ -423,7 +423,7 @@
 
 
 	$(".open-reason").click(function(){
-		$(".screen-topic").hide();
+		hiddenScreen();
 
 		$(".screen-reason").show();
 
@@ -454,7 +454,7 @@
 
 	function screenMagic(){
 		//Hide Screen other
-		$(".screen").hide();
+		hiddenScreen();
 
 		//Show Feedback
 		$(".screen-magic").show();
@@ -463,8 +463,7 @@
 	function screenFeedback(){
 
 		//Hide Screen other
-		$(".screen-topic").hide();
-		$(".screen-reason").hide();
+		hiddenScreen();
 
 		//Show Feedback
 		$(".screen-feedback").show();
@@ -478,8 +477,7 @@
 	function screenThanks(){
 
 		//Hide Screen other
-		$(".screen-feedback").hide();
-		$(".screen-reason").hide();
+		hiddenScreen();
 
 		//Show Feedback
 		$(".screen-thanks").show();
@@ -510,7 +508,9 @@
 	    document.getElementById('beeptap').play();
 	}
 
-
+	function hiddenScreen(){
+		$(".screen").hide();
+	}
 
 	function startTimer() {
 
