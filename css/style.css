@@ -404,6 +404,7 @@ html, body {
         filter: grayscale(50%);
         opacity: 1; }
 
+/*Rate Star*/
 .star-rating {
   font-family: 'FontAwesome';
   margin: 0px auto; }
@@ -467,7 +468,7 @@ html, body {
     height: calc( 100vh - 70px); }
 
 .help-block {
-  margin-top: 15px;
+  margin-top: 0px;
   margin-bottom: 5px; }
 
 .text-roar {
