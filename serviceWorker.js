@@ -1,22 +1,38 @@
 // Cache names
 
-var dataCacheName = 'catchaData-v1.1.3'
+var dataCacheName = 'catchaData-v1.1.4'
 
-var cacheName = 'catchaPWA-1.3'
+var cacheName = 'catchaPWA-1.4'
 
 // Application shell files to be cached
 
 var filesToCache = [
 
        '/',
+       '/manifest.json',
+       '/serviceWorker.js',
+       '/scripts/app.js',
        '/index.html',
 
+       '/images/favicon.ico',
+
        '/uikit/css/uikit.almost-flat.min.css',
+       'public/package/font-awesome/css/font-awesome.min.css',
        '/css/style.css',
 
-       '/scripts/app.js',
-
+       '/public/package/jquery-1.12.4.min.js',
        '/uikit/js/uikit.min.js',
+
+       '/images/emoji/in-love.png',
+       '/images/emoji/smiling.png',
+       '/images/emoji/unhappy.png',
+       '/images/brand/inapp.png',
+       '/images/topic/chef.png',
+       '/images/icon/checked_blue_28.png',
+       '/images/topic/burger-flat.png',
+       '/images/topic/grocery.png',
+       '/images/topic/more.png',
+
 ]
 
        
