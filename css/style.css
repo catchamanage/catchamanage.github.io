@@ -453,7 +453,7 @@ html, body {
     .wrap-feedback .title-box .title-text {
       margin: 0; }
   .wrap-feedback .feedback-form {
-    padding: 15px 15px 0px 15px; }
+    padding: 15px; }
 
 /*Screen Reason Feedback*/
 .screen-reason .wrap-feedback {
