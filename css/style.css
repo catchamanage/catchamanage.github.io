@@ -224,10 +224,7 @@ html, body {
     padding: 10px;
     font-size: 1.6rem;
     margin-bottom: 35px;
-    border-bottom: 1px solid #f5c61c;
-    border-top: 1px solid #f5c61c;
-    border-left: 1px solid #f5c61c;
-    border-right: 1px solid #f5c61c; }
+    border: 1px solid #ffc801; }
   .box-scancode .foot-brand {
     margin-top: 45px;
     border-top: 1px solid #efefef; }
