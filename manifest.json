@@ -1,7 +1,7 @@
 {
     "short_name": "Catcha Tap",
     "name": "Catcha - Ứng dụng tiếp nhận phản hồi",
-    "description": "Catcha Manage là ứng dụng quản lý feedback và chăm sóc khách hàng ngay khi đang trải nghiệm dịch vụ",
+    "description": "Catcha là ứng dụng quản lý feedback và chăm sóc khách hàng ngay khi đang trải nghiệm dịch vụ",
     "icons": [
         {
             "src": "public/images/launcher-icon.png",
@@ -32,6 +32,6 @@
     "start_url": "/index.html",
     "display": "standalone",
     "orientation": "landscape",
-    "theme_color": "#ffffff",
+    "theme_color": "#ffc801",
     "background_color": "#28003c"
 }
