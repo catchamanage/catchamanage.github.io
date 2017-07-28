@@ -283,22 +283,24 @@
 					    </div>
 					</div>
 					<div class="uk-form-row">
-					    <div class="uk-grid">
+					    <div class="uk-grid uk-grid-small">
 					        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
 					        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại">
 					        </div>
 					        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
 							
-							<div class="uk-grid-collapse">
-								
-					        	<input type="text"  class="uk-form-large" placeholder="Email">
+					        	<input type="text"  class="uk-width-7-10 uk-form-large" placeholder="Email">
 					        	<!-- <span class="uk-width-3-10 uk-text-bold">@gmail.com</span> -->
-								<select class="uk-form-large">
-								    <option>@gmail.com</option>
-								    <option>@yahoo.com</option>
-								    <option>@outlook.com</option>
-								</select>
-							</div>
+								<div class="uk-button-dropdown" data-uk-dropdown="{mode:'click', pos:'top-right'}" aria-haspopup="true" aria-expanded="false">
+                                    <button class="uk-button">@gmail.com <i class="uk-icon-caret-down"></i></button>
+                                    <div class="uk-dropdown uk-dropdown-bottom" aria-hidden="true" tabindex="" style="top: 30px; left: 0px;">
+                                        <ul class="uk-nav uk-nav-dropdown">
+                                            <li><a href="#">@gmail.com</a></li>
+                                            <li><a href="#">@yahoo.com</a></li>
+                                            <li><a href="#">@outlook.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
 
 					        </div>
 					    </div>
