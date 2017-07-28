@@ -463,8 +463,7 @@ html, body {
     border-top-right-radius: 0px; }
   .screen-reason .wrap-feedback .grid-feedback {
     overflow-y: scroll;
-    /*height: calc( 100vh - 70px);*/
-    height: calc( 100vh - 55px); }
+    height: calc( 100vh - 70px); }
 
 .help-block {
   margin-top: -5px;
