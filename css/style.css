@@ -518,4 +518,14 @@ html, body {
 .reload {
   cursor: pointer; }
 
+.uk-form input[type=text].text-email {
+  border-radius: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.uk-form .select-email {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #f7f7f7; }
+
 /*# sourceMappingURL=style.css.map */
