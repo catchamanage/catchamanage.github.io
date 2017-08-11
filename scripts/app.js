@@ -5,8 +5,9 @@ if ('serviceWorker' in navigator) {
 	    	subscribe(reg);
 	    	console.log('Service Worker Registered'); 
 	    });
+	    
+	function subscribe(serviceWorkerReg) {  
+	    serviceWorkerReg.pushManager.subscribe({userVisibleOnly: true})
+	}
 }
 
-function subscribe(serviceWorkerReg) {  
-    serviceWorkerReg.pushManager.subscribe({userVisibleOnly: true})
-}
