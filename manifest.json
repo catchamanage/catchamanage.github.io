@@ -2,6 +2,7 @@
     "short_name": "Catcha Tap",
     "name": "Catcha - Ứng dụng tiếp nhận phản hồi",
     "description": "Catcha là ứng dụng quản lý feedback và chăm sóc khách hàng ngay khi đang trải nghiệm dịch vụ",
+    "gcm_sender_id" : "785139398465",
     "icons": [
         {
             "src": "public/images/launcher-icon.png",
