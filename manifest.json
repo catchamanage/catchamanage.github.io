@@ -33,6 +33,6 @@
     "start_url": "/index.html",
     "display": "standalone",
     "orientation": "landscape",
-    "theme_color": "#ffc801",
-    "background_color": "#ffc801"
+    "theme_color": "#ffc8011",
+    "background_color": "#ffc8011"
 }
