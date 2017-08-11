@@ -10,7 +10,6 @@ var filesToCache = [
 
        '/',
        '/manifest.json',
-       '/serviceWorker.js',
        '/scripts/app.js',
        '/index.html',
 
