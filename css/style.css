@@ -466,8 +466,8 @@ html, body {
     height: calc( 100vh - 70px); }
 
 .help-block {
-  margin-top: -5px;
-  margin-bottom: 5px; }
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
 .text-roar {
   font-size: 1.8rem;
