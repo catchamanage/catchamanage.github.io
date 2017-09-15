@@ -151,10 +151,13 @@ p.tip{
 	}
 }
 .screen-feedback{
-	margin-bottom: 219px;
+	margin-bottom: 389px;
 	.about{
 		font-size: 1.32rem !important;
 	}
+    .ui.checkbox{
+    	display: block !important;
+    }
 }
 
 .foot-feedback{
@@ -167,10 +170,11 @@ p.tip{
 	bottom: 0;
 	left: 0;
 	right: 0;
-
+	
 	.compress{
 		float:right;
 	}
+
 }
 
 

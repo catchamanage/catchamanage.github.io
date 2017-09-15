@@ -80,9 +80,11 @@ p.tip {
     width: 69px; }
 
 .screen-feedback {
-  margin-bottom: 219px; }
+  margin-bottom: 389px; }
   .screen-feedback .about {
     font-size: 1.32rem !important; }
+  .screen-feedback .ui.checkbox {
+    display: block !important; }
 
 .foot-feedback {
   border-top-left-radius: 8px !important;

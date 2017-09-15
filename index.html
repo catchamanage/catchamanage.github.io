@@ -137,7 +137,7 @@
 			
 					
 					<div class="field">
-					<label>Mời bạn góp ý chi tiết, để chúng tôi phục vụ bạn tốt hơn!</label>
+					<label>Mời bạn góp ý để giúp chúng tôi phục vụ bạn tốt hơn!</label>
 					<textarea rows="2" name="opinion" placeholder="Opinion"></textarea>
 					</div>
 
@@ -187,6 +187,7 @@
 	$('.compress').click(function(){
 		$('.foot-feedback p').transition('slide up');
 		$(this).transition('fade');
+		$('.go-final').html('<i class="right arrow icon"></i>Next');
 	});
 
 	$('.go-final').click(function(){
