@@ -48,16 +48,10 @@ p.tip{
 
 
 /*Screen scancode*/
+
 .screen-scancode{
-
-}
-
-
-.box-scancode{
-
+	
     border-radius: 15px;
-    border: 1px solid #ececec;
-    background: #f6f5f4;
 
 
     .head-box{
@@ -66,21 +60,32 @@ p.tip{
         background: $yellow;
         padding: 10px;
         font-size: 1.6rem;
-        margin-bottom: 35px;
         border: 1px solid $yellow;
     }
 
     .body-box{
-     padding: 10px;
+		padding-top: 35px;
+        padding-bottom: 45px;
+		background: #f6f5f4;
+		padding: 10px;
     }
 
     .foot-brand{
-        margin-top: 45px;
-        border-top: 1px solid #efefef;
+	    background: #f6f5f4;
+        border-top: 1px solid $gray-light;
+        text-align: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
         .foot-brand-name{
             display: block;
             padding: 10px 0;
             color: #c3bfb8;
+
+            .brand{
+            	text-transform: uppercase;
+            	font-weight: bold;
+            }
         }
     }
 }
@@ -207,7 +212,7 @@ p.tip{
 
     .btn-final{
     	.text-roar{
-    		text-transform: uppercase!important;
+    		text-transform: uppercase !important;
     		font-size: 1.4rem;
 		    line-height: 1.8rem;
 		    display: block;

@@ -19,27 +19,33 @@ p.tip {
   padding: 25px; }
 
 /*Screen scancode*/
-.box-scancode {
-  border-radius: 15px;
-  border: 1px solid #ececec;
-  background: #f6f5f4; }
-  .box-scancode .head-box {
+.screen-scancode {
+  border-radius: 15px; }
+  .screen-scancode .head-box {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background: #ffc801;
     padding: 10px;
     font-size: 1.6rem;
-    margin-bottom: 35px;
     border: 1px solid #ffc801; }
-  .box-scancode .body-box {
+  .screen-scancode .body-box {
+    padding-top: 35px;
+    padding-bottom: 45px;
+    background: #f6f5f4;
     padding: 10px; }
-  .box-scancode .foot-brand {
-    margin-top: 45px;
-    border-top: 1px solid #efefef; }
-    .box-scancode .foot-brand .foot-brand-name {
+  .screen-scancode .foot-brand {
+    background: #f6f5f4;
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+    .screen-scancode .foot-brand .foot-brand-name {
       display: block;
       padding: 10px 0;
       color: #c3bfb8; }
+      .screen-scancode .foot-brand .foot-brand-name .brand {
+        text-transform: uppercase;
+        font-weight: bold; }
 
 /*Screen Thanks*/
 .screen-thanks {

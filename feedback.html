@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="wrapp-layout">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+	<title>ListenQR</title>
+	<link rel="stylesheet" type="text/css" href="public/semantic/semantic.min.css">
+	<link rel="stylesheet" href="public/css/listen.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="public/semantic/semantic.min.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="screen screen-react">
+	<div class="ui grid centered">
+	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+	    <p class="question-one">When you need help or has concerns related with our product, how satisfied are you with our customer support's performance?</p>
+
+		<div class="ui equal width grid emoji">
+		  <div class="column">
+		    <img src="public/images/emoji-unhappy.gif" alt="">
+		    <p class="tip">Unhappy</p>
+		  </div>
+		  <div class="column">
+		    <img src="public/images/emoji-neutral.gif" alt="">
+		    <p class="tip">Neutral</p>
+		  </div>
+		  <div class="column">
+		    <img src="public/images/emoji-statisfied.gif" alt="">
+		    <p class="tip">Statisfied</p>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+</div>
+
+<div class="screen screen-feedback" hidden>
+	<div class="ui grid centered">
+	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+	    <p class="text-center tip">Swipe up to back</p>
+
+		<div class="ui grid centered ">
+		  <div class="column  text-center">
+		    <img src="public/images/emoji-unhappy.gif" alt="">
+		    <p>We are sorry. What we did wrong?</p>
+		  </div>
+		</div>
+
+
+		<div class="ui segment">
+		  <div class="ui relaxed divided list">
+
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/chef.png"> Nhân viên</label>
+				    </div>
+				  </div>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/burger-flat.png"> Thực đơn</label>
+				    </div>
+				  </div>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/salt.png"> Khẩu vị</label>
+				    </div>
+				  </div>
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/grocery.png"> Không gian</label>
+				    </div>
+				  </div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		
+
+	  </div>
+	</div>
+</div>
+
+<div class="foot-feedback" hidden>
+	<div class="compress">
+		<i class="caret down icon "></i>
+	</div>
+	<p>Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
+	<button class="fluid ui right labeled icon button large red go-final">
+	  <i class="right arrow icon"></i>
+	  Okay
+	</button>
+
+</div>
+
+
+<div class="screen screen-opinion" hidden>
+    <div class="ui grid centered">
+	    <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+			<div class="wrap-feedback">
+
+				<div class="head-box">
+					<p class="uk-text-center uk-text-bold title-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
+				</div>
+
+
+				<div class="ui form body-box">
+			
+					
+					<div class="field">
+					<label>Mời bạn góp ý để giúp chúng tôi phục vụ bạn tốt hơn!</label>
+					<textarea rows="2" name="opinion" placeholder="Opinion"></textarea>
+					</div>
+
+					<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+
+					<div class="field">
+					<input name="name" type="text" placeholder="Name">
+					</div>
+
+					<div class="field">
+					<input name="phone" type="number" placeholder="Phone" pattern="[0-9]*" inputmode="numeric" >
+					</div>
+
+					<div class="ui error message"></div>
+
+
+					<div class="fluid ui submit button medium blue btn-final">
+						<span class="text-roar">XONG</span>
+						<span class="text-rule">Cam kết bảo mật thông tin</span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="screen screen-thanks" hidden>
+	<div class="ui grid centered">
+		<div class="wrap-thanks">
+			<img src="public/images/icon/checked_white.png" alt="" class="img-checked">
+			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
+			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('.emoji .column').click(function(){
+		$(this).transition({
+				animation  : 'fly down',
+				duration   : '1s',
+				onComplete : function() {
+					$('.screen-feedback').transition('fly down', '500ms');
+					$('.foot-feedback').transition('slide up', '800ms');
+				}
+			});
+		$('.screen-react').transition('swing down');
+		
+	});
+
+	$('.ui.checkbox').checkbox();
+
+	$('.compress').click(function(){
+		$('.foot-feedback p').transition('slide up');
+		$(this).transition('fade');
+		$('.go-final').html('<i class="right arrow icon"></i>Next');
+	});
+
+	$('.go-final').click(function(){
+		$('.foot-feedback').transition('fade', '500ms');
+		$('.screen-feedback').transition('fade', '450ms');
+		$('body').css({background:'#3e0052'});
+		$('.screen-opinion').transition('slide down', '500ms');
+	});
+
+	$('.ui.form')
+	  .form({
+	    on: 'blur',
+	    fields: {
+	      opinion: {
+	        identifier  : 'opinion',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Please enter your opinion'
+	          }
+	        ]
+	      },
+	      name: {
+	        identifier  : 'name',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Please enter your name'
+	          }
+	        ]
+	      },
+	      phone: {
+	        identifier  : 'phone',
+	        rules: [
+	          {
+	            type   : 'regExp[/^[+0-9_-]{10,11}$/]',
+	            prompt : 'Please enter your number phone'
+	          }
+	        ]
+	      }
+	    },
+	    onSuccess : function() {
+            $('.screen-opinion').transition('slide down', '500ms');
+            $('.screen-thanks').transition('slide down', '500ms');
+            //window.location.href = "/thanks.html";
+        }
+	  })
+	;
+
+
+</script>
+
+</body>
+</html>
