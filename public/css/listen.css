@@ -94,6 +94,8 @@ p.tip {
   bottom: 0;
   left: 0;
   right: 0; }
+  .foot-feedback .compress {
+    float: right; }
 
 /*Feedback*/
 .screen-opinion {

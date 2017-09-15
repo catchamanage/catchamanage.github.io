@@ -111,7 +111,9 @@
 </div>
 
 <div class="foot-feedback" hidden>
-		
+	<div class="compress">
+		<i class="caret down icon "></i>
+	</div>
 	<p>Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
 	<button class="fluid ui right labeled icon button large red go-final">
 	  <i class="right arrow icon"></i>
@@ -184,9 +186,14 @@
 
 	$('.ui.checkbox').checkbox();
 
+	$('.compress').click(function(){
+		$('.foot-feedback p').transition('slide up');
+		$(this).transition('fade');
+	});
+
 	$('.go-final').click(function(){
 		$('.foot-feedback').transition('fade', '500ms');
-		$('.screen-feedback').transition('fade', '300ms');
+		$('.screen-feedback').transition('fade', '450ms');
 		$('body').css({background:'#3e0052'});
 		$('.screen-opinion').transition('slide down', '500ms');
 	});
