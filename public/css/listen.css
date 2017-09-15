@@ -80,7 +80,7 @@ p.tip {
     width: 69px; }
 
 .screen-feedback {
-  margin-bottom: 129px; }
+  margin-bottom: 159px; }
   .screen-feedback .about {
     font-size: 1.32rem !important; }
 
@@ -111,7 +111,8 @@ p.tip {
     border-top-right-radius: 5px;
     padding: 10px; }
     .wrap-feedback .head-box .title-text {
-      margin: 0; }
+      margin: 0;
+      font-size: 1.2rem; }
   .wrap-feedback .body-box {
     padding: 15px; }
   .wrap-feedback .btn-final .text-roar {
