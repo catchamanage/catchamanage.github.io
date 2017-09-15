@@ -142,19 +142,19 @@
 					<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
 
 					<div class="field">
-					<label>Name</label>
-					<input name="name" type="text">
+					<!-- <label>Name</label> -->
+					<input name="name" type="text" placeholder="Name">
 					</div>
 
 					<div class="field">
-					<label>Phone</label>
-					<input name="phone" type="text">
+					<!-- <label>Phone</label> -->
+					<input name="phone" type="text" placeholder="Phone">
 					</div>
 
 					<div class="ui error message"></div>
 
 
-					<div class="fluid ui submit button large blue btn-final">
+					<div class="fluid ui submit button medium blue btn-final">
 						<span class="text-roar">XONG</span>
 						<span class="text-rule">Cam kết bảo mật thông tin</span>
 					</div>
@@ -201,30 +201,33 @@
 	          {
 	            type   : 'empty',
 	            prompt : 'Please enter your opinion'
-	          }
-	        ]
-	      },
-	      name: {
-	        identifier  : 'name',
-	        rules: [
-	          {
-	            type   : 'empty',
-	            prompt : 'Please enter your name'
-	          }
-	        ]
-	      },
-	      phone: {
-	        identifier  : 'phone',
-	        rules: [
-	          {
-	            type   : 'empty',
-	            prompt : 'Please enter your number phone'
 	          },{
-	            type   : 'minLength[10]',
-	            prompt : 'Your phone must be at least {ruleValue} characters'
+	            type   : 'minLength[2]',
+	            prompt : 'Your opinion must be at least {ruleValue} characters'
 	          }
 	        ]
-	      }
+	      },
+	      // name: {
+	      //   identifier  : 'name',
+	      //   rules: [
+	      //     {
+	      //       type   : 'empty',
+	      //       prompt : 'Please enter your name'
+	      //     }
+	      //   ]
+	      // },
+	      // phone: {
+	      //   identifier  : 'phone',
+	      //   rules: [
+	      //     {
+	      //       type   : 'empty',
+	      //       prompt : 'Please enter your number phone'
+	      //     },{
+	      //       type   : 'minLength[10]',
+	      //       prompt : 'Your phone must be at least {ruleValue} characters'
+	      //     }
+	      //   ]
+	      // }
 	    }
 	  })
 	;
