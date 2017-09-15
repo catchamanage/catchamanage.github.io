@@ -5,565 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
-	<title>Catcha Tap</title>
-	<link rel="manifest" href="/manifest.json">
-	<link rel="icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="uikit/css/uikit.almost-flat.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="public/package/font-awesome/css/font-awesome.min.css" />
-	<script src="public/package/jquery-1.12.4.min.js"></script>
-	<script src="uikit/js/uikit.min.js"></script>
+	<title>ListenQR</title>
+	<link rel="stylesheet" type="text/css" href="public/semantic/semantic.min.css">
+	<link rel="stylesheet" href="public/css/listen.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="public/semantic/semantic.min.js"></script>
+
 
 </head>
 <body>
 
-<div class="screen screen-scancode">	
-	<div class="box-scancode">
-		<form class="uk-form uk-form-large uk-text-center">
-			<div class="head-box uk-text-uppercase uk-text-bold">
-				Enter Code
-			</div>
-			<p class="uk-text-bold">Please enter code to confirm setup: <span class="uk-text-danger">*</span></p>
-            <input type="text" placeholder="Enter code" class="uk-form-large" name="padcode">
-            <a class="uk-button uk-button-large alycode" href="javascript:void(0);">Apply</a>
-			<div class="foot-brand">
-				<a href="http://catcha.vn" target="_blank" class="foot-brand-name">Powered by <span class="uk-text-uppercase uk-text-bold">Catcha</span></a>
-			</div>
-        </form>
+<div class="screen screen-react">
+	<div class="ui grid centered">
+	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+	    <p class="question-one">When you need help or has concerns related with our product, how satisfied are you with our customer support's performance?</p>
+
+		<div class="ui equal width grid emoji">
+		  <div class="column">
+		    <img src="public/images/emoji-unhappy.gif" alt="">
+		    <p class="tip">Unhappy</p>
+		  </div>
+		  <div class="column">
+		    <img src="public/images/emoji-neutral.gif" alt="">
+		    <p class="tip">Neutral</p>
+		  </div>
+		  <div class="column">
+		    <img src="public/images/emoji-statisfied.gif" alt="">
+		    <p class="tip">Statisfied</p>
+		  </div>
+		</div>
+
+	  </div>
 	</div>
 </div>
 
+<div class="screen screen-feedback" hidden>
+	<div class="ui grid centered">
+	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+	    <p class="text-center tip">Swipe up to back</p>
 
-<div class="screen screen-magic" hidden>
-	<div class="uk-container uk-container-center">
-		<h1 class="word-tip uk-text-center">Bạn cảm thấy dịch vụ hôm nay thế nào?</h1>
-
-		<div class="uk-grid box-emoji uk-text-center">
-		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
-		    	<div class="emoji-item" data-react="1">
-			     	<img src="images/emoji/in-love.png" alt="" class="emoji">
-			     	<p class="emoji-note uk-text-muted">Tuyệt vời</p>
-		    	</div>
-		    </div>
-		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
-		    	<div class="emoji-item" data-react="2">
-		       		<img src="images/emoji/smiling.png" alt="" class="emoji">
-		       		<p class="emoji-note uk-text-muted">Hài lòng</p>
-		    	</div>
-		    </div>
-		    <div class="uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-3 uk-width-1-1">
-		    	<div class="emoji-item" data-react="3">
-		   	   		<img src="images/emoji/unhappy.png" alt="" class="emoji">
-		   	   		<p class="emoji-note uk-text-muted">Thất vọng</p>
-		    	</div>
-		    </div>
+		<div class="ui grid centered ">
+		  <div class="column  text-center">
+		    <img src="public/images/emoji-unhappy.gif" alt="">
+		    <p>We are sorry. What we did wrong?</p>
+		  </div>
 		</div>
-	</div>
-	<a href="catcha.vn"><img src="images/brand/inapp.png" alt="Catcha Products" class="brand-inapp"></a>
-	<!-- <a href="reg.html">Catcha.vn</a> -->
-</div>
 
 
-<div class="screen screen-topic" hidden>
+		<div class="ui segment">
+		  <div class="ui relaxed divided list">
 
-	<div class="guide-box">
-		<p class="guide-change guide uk-text-center">Lý do nào bạn không hài lòng? Mách chúng tôi để phục vụ bạn tốt hơn</p>
-	</div>
-
-
-	<div class="uk-container uk-container-center topic-box">
-		<div class="uk-grid uk-text-center">
-		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-topic="1">
-		    		<div class=" box-overlay">
-				     	<img src="images/topic/chef.png" alt="Nhân viên" class="topic">
-
-				     	<div class="wrap-overlay active">
-			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
-							<span class="overlay"></span>
-				     	</div>
-		    		</div>
-			     	<p class="topic-note uk-text-muted">Nhân viên</p>
-		    	</div>
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/chef.png"> Nhân viên</label>
+				    </div>
+				  </div>
+		      </div>
 		    </div>
-		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-topic="2">
-		    		<div class="box-overlay">
-			       		<img src="images/topic/burger-flat.png" alt="" class="topic">
 
-				     	<div class="wrap-overlay active">
-			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
-							<span class="overlay"></span>
-				     	</div>
-		    		</div>
-		       		<p class="topic-note uk-text-muted">Thực đơn</p>
-		    	</div>
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/burger-flat.png"> Thực đơn</label>
+				    </div>
+				  </div>
+		      </div>
 		    </div>
-		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-topic="3">
-		    		<div class="box-overlay">
-			   	   		<img src="images/topic/grocery.png" alt="" class="topic">
 
-				     	<div class="wrap-overlay active">
-			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
-							<span class="overlay"></span>
-				     	</div>
-		    		</div>
-		    	
-		   	   		<p class="topic-note uk-text-muted">Không gian</p>
-		    	</div>
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/salt.png"> Khẩu vị</label>
+				    </div>
+				  </div>
+		      </div>
 		    </div>
-		    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2 uk-width-1-1">
-		    	<div class="topic-item" data-topic="3">
-		    		<div class="box-overlay">
-			   	   		<img src="images/topic/more.png" alt="" class="topic">
 
-				     	<div class="wrap-overlay active">
-			    			<img src="images/icon/checked_blue_28.png" alt="checked" class="checked">
-							<span class="overlay"></span>
-				     	</div>
-		    		</div>
-
-		   	   		<p class="topic-note uk-text-muted">Khác</p>
-		    	</div>
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/grocery.png"> Không gian</label>
+				    </div>
+				  </div>
+		      </div>
 		    </div>
+
+		  </div>
 		</div>
-	</div>
-
-
-
-	<div class="uk-container uk-container-center control-center">
-		<div class="uk-grid">
-			<div class="uk-width-1-2">
-				<button class="uk-button uk-width-1-1 uk-button-danger uk-text-bold uk-text-uppercase open-feedback">Hoàn thành</button>
-			</div>
-			<div class="uk-width-1-2">
-				<button class="uk-button uk-width-1-1 uk-button-primary uk-text-bold uk-text-uppercase open-reason">Góp ý thêm</button>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-
-<div class="screen screen-reason" hidden>
-	<div class="uk-grid uk-grid-collapse">
 		
-		<div class="uk-width-large-3-10 uk-width-medium-3-10 uk-width-small-3-10 uk-width-1-2 choice-reason">
-			
-			<div class="choice-name">
-				Nhân viên
-			</div>
-			
-			<div class="choice-body">
-				<div class="item">
-				    <img src="images/reason/notes.png"  class="reason-thumbnail">
-				    <span class="uk-text-middle">Phục vụ</span>
-				</div>
 
-				<div class="item">
-				    <img src="images/reason/chef.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Hành xử</span>
-				</div>
+	  </div>
+	</div>
+</div>
 
-				<div class="item">
-				    <img src="images/reason/clock.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Thời gian chờ</span>
-				</div>
-			</div>		
+<div class="foot-feedback" hidden>
+		
+	<p>Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
+	<button class="fluid ui right labeled icon button large red go-final">
+	  <i class="right arrow icon"></i>
+	  Okay
+	</button>
 
-			<div class="choice-name">
-				Thực đơn
-			</div>
-			
-			<div class="choice-body">
-
-				<div class="item">
-				    <img src="images/reason/cocktail.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Đồ uống</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/spaguetti.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Đồ ăn</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/salt.png"  class="reason-thumbnail">
-				    <span class="uk-text-middle">Khẩu vị</span>
-				</div>
-			</div>
+</div>
 
 
-			<div class="choice-name">
-				Không gian
-			</div>
-			
-			<div class="choice-body">
-
-				<div class="item">
-				    <img src="images/reason/terrace.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Bàn ghế</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/macro.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Mùi hương</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/no-smoking.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">No smoking</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/acoustic-guitar.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Âm nhạc</span>
-				</div>  
-			</div>
-
-			<div class="choice-name">
-				Khác
-			</div>
-			
-			<div class="choice-body">
-
-				<div class="item">
-				    <img src="images/reason/money_1.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Thanh toán</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/open.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Giờ mở cửa</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/close.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Giờ đóng cửa</span>
-				</div>
-				<div class="item">
-				    <img src="images/reason/toilet-paper.png" class="reason-thumbnail">
-				    <span class="uk-text-middle">Toilet</span>
-				</div>
-			</div>
-
-		</div>			
-		<div class="uk-width-large-7-10 uk-width-medium-7-10 uk-width-small-7-10 uk-width-1-2 ">
-			
+<div class="screen screen-opinion" hidden>
+    <div class="ui grid centered">
+	    <div class="sixteen wide mobile eight wide tablet eight wide computer column">
 			<div class="wrap-feedback">
 
-				<div class="title-box">
+				<div class="head-box">
 					<p class="uk-text-center uk-text-bold title-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
 				</div>
 
-				<form class="uk-form feedback-form grid-feedback">
 
-					<div class="uk-form-row">
-					    <textarea cols="" rows="4" class="uk-width-1-1" placeholder="Mời bạn góp ý để chúng tôi phục vụ tốt hơn"  tabindex="1"></textarea>
-					</div>
+				<form class="ui form body-box">
+			
 					
-
-<!-- 					<div class="star-rating">
-					  <fieldset>
-					    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
-					    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
-					    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
-					    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
-					    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
-					  </fieldset>
-					</div> -->
+					<div class="field">
+					<label>Mời bạn góp ý chi tiết, để chúng tôi phục vụ bạn tốt hơn!</label>
+					<textarea rows="2" name="opinion" placeholder="Opinion"></textarea>
+					</div>
 
 					<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
-<!-- 					<div class="uk-form-row">
-						<div class="uk-form-controls" >
-							<label><input type="radio" name="gender"> Anh</label>
-							<label><input type="radio" name="gender"> Chị</label>
-						</div>
-					</div> -->
 
-					<div class="uk-form-row">
-					    <div class="uk-grid">
-					        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
-					        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại"  tabindex="3">
-					        </div>
-
-					    </div>
+					<div class="field">
+					<label>Name</label>
+					<input name="name" type="text">
 					</div>
 
-					<div class="uk-form-row">
-					    <div class="uk-grid">
-					        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
-					        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên"  tabindex="2">
-					        </div>
-					    </div>
+					<div class="field">
+					<label>Phone</label>
+					<input name="phone" type="text">
 					</div>
-<!-- 					<div class="uk-form-row">
-					    <div class="uk-grid uk-grid-collapse">
-					        <div class="uk-width-large-6-10 uk-width-medium-6-10 uk-width-small-6-10 uk-width-1-1">
-					        	<input type="text"  class="uk-width-1-1 uk-form-large lump-input" placeholder="Email" tabindex="4">
-					        </div>
-					        <div class="uk-width-large-4-10 uk-width-medium-4-10 uk-width-small-4-10 uk-width-1-1">
-					        	<select class="uk-width-1-1 uk-form-large lump-select">
-                                    <option>@gmail.com</option>
-                                    <option>@hotmail.com</option>
-                                    <option>@yahoo.com</option>
-                                </select>
-					        </div>
-					    </div>
-					</div> -->
 
-			        <div class="uk-form-row">
-						<a class="uk-button uk-width-1-1 uk-button-primary say-submmit" tabindex="5">
-							<span class="uk-text-bold uk-text-uppercase text-roar">Hoàn Thành</span>
-							<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
-						</a>
-			        </div>
-				</form>		
+					<div class="ui error message"></div>
+
+
+					<div class="fluid ui submit button large blue btn-final">
+						<span class="text-roar">XONG</span>
+						<span class="text-rule">Cam kết bảo mật thông tin</span>
+					</div>
+
+				</form>
+
 			</div>
-			
-		</div>
-	</div>
-
-</div>
-
-
-<div class="screen screen-feedback" hidden>
-    <div class="uk-container uk-container-center">
-		<div class="wrap-feedback">
-
-			<div class="title-box">
-				<p class="uk-text-center uk-text-bold title-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
-			</div>
-
-			<form class="uk-form feedback-form">
-			
-<!-- 				<div class="star-rating uk-text-center">
-				  <fieldset>
-				    <input type="radio" id="rate5" name="rating" value="5" /><label for="rate5" title="Outstanding">5 stars</label>
-				    <input type="radio" id="rate4" name="rating" value="4" /><label for="rate4" title="Very Good">4 stars</label>
-				    <input type="radio" id="rate3" name="rating" value="3" /><label for="rate3" title="Good">3 stars</label>
-				    <input type="radio" id="rate2" name="rating" value="2" /><label for="rate2" title="Poor">2 stars</label>
-				    <input type="radio" id="rate1" name="rating" value="1" /><label for="rate1" title="Very Poor">1 star</label>
-				  </fieldset>
-				</div> -->
-
-				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
-
-				<div class="uk-form-row">
-				    <div class="uk-grid">
-				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
-				        	<input type="number" pattern="[0-9]*" inputmode="numeric" class="uk-width-1-1 uk-form-large" placeholder="Số điện thoại" maxlength="20" tabindex="1">
-				        </div>
-				    </div>
-				</div>
-<!-- 				<div class="uk-form-row">
-					<div class="uk-form-controls">
-						<label><input type="radio" name="gender"> Anh</label>
-						<label><input type="radio" name="gender"> Chị</label>
-					</div>
-				</div> -->
-				<div class="uk-form-row">
-				    <div class="uk-grid">
-				        <div class="uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
-				        	<input type="text"  class="uk-width-1-1 uk-form-large" placeholder="Họ tên" tabindex="2">
-				        </div>
-				    </div>
-				</div>
-
-		        <div class="uk-form-row">
-					<a class="uk-button uk-width-1-1 uk-button-primary say-submmit" tabindex="3">
-						<span class="uk-text-bold uk-text-uppercase text-roar">Xong</span>
-						<span class="text-rule">Cam kết bảo mật thông tin cá nhân</span>
-					</a>
-		        </div>
-			</form>		
 		</div>
     </div>
 </div>
 
-<div class="screen screen-thanks" hidden>
-	<div class="uk-container uk-container-center uk-text-center">
-		<a href="javascript:void(0);" class="close-grab reload"><img src="images/icon/close_white.png" alt=""></a>
-		<div class="wrap-thanks">
-			<img src="images/icon/checked_white.png" alt="" class="img-checked">
-			<h1 class="say-thanks">Cảm ơn phản hồi của bạn.</h1>
-			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
-			<a href="javascript:void(0);" class="uk-button tm-button-download reload">OK</a>
-		</div>
-
-	</div>
-</div>
 
 
-<audio id="beeptap" src="sound/button-16.mp3"></audio>
-<input type="hidden" id="timer" value=15>
-
-
-
-<script src="scripts/app.js"></script>
 <script>
-
-	// $(document).ready(function () {
-	//     //Disable cut copy paste
-	//     $('body').bind('cut copy paste', function (e) {
-	//         e.preventDefault();
-	//     });
-	   
-	//     //Disable mouse right click
-	//     $("body").on("contextmenu",function(e){
-	//         return false;
-	//     });
-	// });
-
-
-
-
-	$(".alycode").click(function(){
-		//A beep
-		playSound();
-
-		//Open magic emoji
-		screenMagic();
-
-	});
-
-	//Tap Emotion
-	$(".emoji-item").click(function(){
-
-		//A beep
-		playSound();
-
-		//Change text
-		var react = $(this).data("react");
-		var string = "";
-		switch(react) {
-		    case 1:
-		        string = "Bạn yêu thích ở điều gì!";
-		        break;
-		    case 2:
-		        string = "Bạn hài lòng về điều gì!";
-		        break;
-		    case 3:
-		        string = "Điều gì khiến bạn không hài lòng!";
-		        break;
-		    default:
-		        string = "Điều gì khiến bạn không hài lòng!";
-		}
-
-		$(".guide-change").text(string);
-
-		//Hide Show Element
-		hiddenScreen();
-		$(".screen-topic").show();
-
-		//Count down timer Start 15 sec
-		startTimer();
-
-	});
-
-
-	$(".open-reason").click(function(){
-		hiddenScreen();
-
-		$(".screen-reason").show();
-
-		//Set time countdown is 3 minute
-		$("#timer").val(180);
-
-	});
-
-	$(".open-feedback").click(function(){
-
-		//A beep
-		playSound();
-
-		screenFeedback();
-
-
-	});
-
-
-	$(".say-submmit").click(function(){
-
-		//A beep
-		playSound();
-
-		screenThanks();
-
-	});
-
-	function screenMagic(){
-		//Hide Screen other
-		hiddenScreen();
-
-		//Show Feedback
-		$(".screen-magic").show();
-	}
-
-	function screenFeedback(){
-
-		//Hide Screen other
-		hiddenScreen();
-
-		//Show Feedback
-		$(".screen-feedback").show();
-		$("html").css( "background", "rgb(0, 0, 0)" );
-
-		//Set time countdown is 3 minute
-		$("#timer").val(50);
-	}
-
-
-	function screenThanks(){
-
-		//Hide Screen other
-		hiddenScreen();
-
-		//Show Feedback
-		$(".screen-thanks").show();
-		$("html").css( "background", "rgb(6, 85, 169)" );
-
-		//Set time countdown is 5 sec
-		$("#timer").val(5);
-	}
-
-	$(".topic-item").click(function(){
-		playSound();
-		var topic = $(this).data("topic");
-		$(this).find( ".wrap-overlay" ).toggleClass("active");
+	$('.emoji .column').click(function(){
+		$(this).transition({
+				animation  : 'fly down',
+				duration   : '1s',
+				onComplete : function() {
+					$('.screen-feedback').transition('fly down', '500ms');
+					$('.foot-feedback').transition('slide up', '800ms');
+				}
+			});
+		$('.screen-react').transition('swing down');
 		
 	});
 
+	$('.ui.checkbox').checkbox();
 
-	$(".item").click(function(){
-		$(this).toggleClass("active");
+	$('.go-final').click(function(){
+		$('.foot-feedback').transition('fade', '500ms');
+		$('.screen-feedback').transition('fade', '300ms');
+		$('body').css({background:'#3e0052'});
+		$('.screen-opinion').transition('slide up', '500ms');
 	});
 
-	$(".reload").click(function(){
-		location.reload();
-	});
-
-	//Play when customer tap
-	function playSound() {
-	    document.getElementById('beeptap').play();
-	}
-
-	function hiddenScreen(){
-		$(".screen").hide();
-	}
-
-	function startTimer() {
-
-	    var countdownTimer = setInterval(function() {
-
-	        var i = parseInt($("#timer").val());
-	        console.log(i);
-	        i = i - 1;
-	        $("#timer").val(i);
-
-	        if (i <= 0) {
-	            clearInterval(countdownTimer);
-	            location.reload();
-	        }
-
-	    }, 1000);
-
-	}
-
+	$('.ui.form')
+	  .form({
+	    on: 'blur',
+	    fields: {
+	      opinion: {
+	        identifier  : 'opinion',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Please enter your opinion'
+	          }
+	        ]
+	      },
+	      name: {
+	        identifier  : 'name',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Please enter your name'
+	          }
+	        ]
+	      },
+	      phone: {
+	        identifier  : 'phone',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Please enter your number phone'
+	          },{
+	            type   : 'minLength[10]',
+	            prompt : 'Your phone must be at least {ruleValue} characters'
+	          }
+	        ]
+	      }
+	    }
+	  })
+	;
 
 </script>
 

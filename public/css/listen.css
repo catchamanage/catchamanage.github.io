@@ -1,0 +1,128 @@
+/*Varibles*/
+/*General*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #67686a;
+  font-size: 1.4rem;
+  background: #fefefe; }
+
+p.tip {
+  font-size: 1.2rem;
+  color: #8f8f8f; }
+
+.text-center {
+  text-align: center !important; }
+
+.screen {
+  padding: 25px; }
+
+/*Screen scancode*/
+.box-scancode {
+  border-radius: 15px;
+  border: 1px solid #ececec;
+  background: #f6f5f4; }
+  .box-scancode .head-box {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #ffc801;
+    padding: 10px;
+    font-size: 1.6rem;
+    margin-bottom: 35px;
+    border: 1px solid #ffc801; }
+  .box-scancode .body-box {
+    padding: 10px; }
+  .box-scancode .foot-brand {
+    margin-top: 45px;
+    border-top: 1px solid #efefef; }
+    .box-scancode .foot-brand .foot-brand-name {
+      display: block;
+      padding: 10px 0;
+      color: #c3bfb8; }
+
+/*Screen Thanks*/
+.screen-thanks {
+  height: 100%;
+  width: 100%;
+  background: #0655a9;
+  position: relative; }
+  .screen-thanks .close-grab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+    padding: 10px 10px 30px 30px; }
+  .screen-thanks .wrap-thanks {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .screen-thanks .wrap-thanks .img-checked {
+      width: 80px; }
+    .screen-thanks .wrap-thanks .say-thanks, .screen-thanks .wrap-thanks p {
+      color: #fefefe; }
+    .screen-thanks .wrap-thanks .say-thanks {
+      font-size: 2.2rem; }
+    .screen-thanks .wrap-thanks .tm-button-download {
+      margin: 15px 0;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border: none;
+      color: #2ba3d4 !important;
+      padding: 0 20px;
+      line-height: 40px;
+      font-size: 18px;
+      width: 219px; }
+
+/*Screen react*/
+.screen-react .emoji {
+  margin-top: 219px; }
+  .screen-react .emoji img {
+    width: 69px; }
+
+.screen-feedback {
+  margin-bottom: 129px; }
+  .screen-feedback .about {
+    font-size: 1.32rem !important; }
+
+.foot-feedback {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  background: #3e0052;
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/*Feedback*/
+.screen-opinion {
+  height: 100%;
+  width: 100%;
+  background: #3e0052; }
+
+.wrap-feedback {
+  background: #fefefe;
+  border-radius: 5px;
+  margin-top: 15px; }
+  .wrap-feedback .head-box {
+    background: #ffc801;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px; }
+    .wrap-feedback .head-box .title-text {
+      margin: 0; }
+  .wrap-feedback .body-box {
+    padding: 15px; }
+  .wrap-feedback .btn-final .text-roar {
+    text-transform: uppercase !important;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    display: block; }
+  .wrap-feedback .btn-final .text-rule {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    opacity: 0.8; }
+
+/*# sourceMappingURL=listen.css.map */
