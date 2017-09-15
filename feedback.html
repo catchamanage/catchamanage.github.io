@@ -15,7 +15,6 @@
 	  crossorigin="anonymous"></script>
 	<script src="public/semantic/semantic.min.js"></script>
 
-
 </head>
 <body>
 
@@ -23,20 +22,20 @@
 <div class="screen screen-react">
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-	    <p class="question-one">When you need help or has concerns related with our product, how satisfied are you with our customer support's performance?</p>
+	    <p class="question-one">Bạn đánh giá đến mức nào về dịch vụ kinh doanh của chúng tôi?</p>
 
 		<div class="ui equal width grid emoji">
-		  <div class="column">
+		  <div class="column item" data-react="3">
 		    <img src="public/images/emoji-unhappy.gif" alt="">
-		    <p class="tip">Unhappy</p>
+		    <p class="tip">Không hài lòng</p>
 		  </div>
-		  <div class="column">
+		  <div class="column item" data-react="2">
 		    <img src="public/images/emoji-neutral.gif" alt="">
-		    <p class="tip">Neutral</p>
+		    <p class="tip">Bình thường</p>
 		  </div>
-		  <div class="column">
+		  <div class="column item" data-react="1">
 		    <img src="public/images/emoji-statisfied.gif" alt="">
-		    <p class="tip">Statisfied</p>
+		    <p class="tip">Rất hài lòng</p>
 		  </div>
 		</div>
 
@@ -47,12 +46,12 @@
 <div class="screen screen-feedback" hidden>
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-	    <p class="text-center tip">Swipe up to back</p>
+	    <!-- <p class="text-center tip">Swipe up to back</p> -->
 
 		<div class="ui grid centered ">
-		  <div class="column  text-center">
+		  <div class="column  text-center reponse-emotion">
 		    <img src="public/images/emoji-unhappy.gif" alt="">
-		    <p>We are sorry. What we did wrong?</p>
+		    <p class="reponse-emotion">We are sorry. What we did wrong?</p>
 		  </div>
 		</div>
 
@@ -63,7 +62,7 @@
 		    <div class="item">
 		      <div class="content">
 				  <div class="inline field">
-				    <div class="ui checkbox">
+				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
 				      <label class="about"><img class="ui avatar image" src="public/images/chef.png"> Nhân viên</label>
 				    </div>
@@ -74,7 +73,7 @@
 		    <div class="item">
 		      <div class="content">
 				  <div class="inline field">
-				    <div class="ui checkbox">
+				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
 				      <label class="about"><img class="ui avatar image" src="public/images/burger-flat.png"> Thực đơn</label>
 				    </div>
@@ -85,7 +84,7 @@
 		    <div class="item">
 		      <div class="content">
 				  <div class="inline field">
-				    <div class="ui checkbox">
+				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
 				      <label class="about"><img class="ui avatar image" src="public/images/salt.png"> Khẩu vị</label>
 				    </div>
@@ -96,7 +95,7 @@
 		    <div class="item">
 		      <div class="content">
 				  <div class="inline field">
-				    <div class="ui checkbox">
+				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
 				      <label class="about"><img class="ui avatar image" src="public/images/grocery.png"> Không gian</label>
 				    </div>
@@ -116,7 +115,7 @@
 	<div class="compress">
 		<i class="caret down icon "></i>
 	</div>
-	<p>Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
+	<p class="tip-to-opinion">Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
 	<button class="fluid ui right labeled icon button large red go-final">
 	  <i class="right arrow icon"></i>
 	  Okay
@@ -168,6 +167,7 @@
     </div>
 </div>
 
+
 <div class="screen screen-thanks" hidden>
 	<div class="ui grid centered">
 		<div class="wrap-thanks">
@@ -179,25 +179,35 @@
 </div>
 
 <script>
+
+	//Effect
+	$('.ui.checkbox').checkbox();
+
 	$('.emoji .column').click(function(){
 		$(this).transition({
 				animation  : 'fly down',
 				duration   : '1s',
 				onComplete : function() {
 					$('.screen-feedback').transition('fly down', '500ms');
-					$('.foot-feedback').transition('slide up', '800ms');
+					$('.foot-feedback').transition('slide up', '2s');
 				}
 			});
 		$('.screen-react').transition('swing down');
 		
 	});
 
-	$('.ui.checkbox').checkbox();
+	// $('.item-topic').click(function(){
+	// 	$('.foot-feedback').transition({
+	// 			animation  : 'slide up',
+	// 			duration   : '2s'
+	// 			});
+	// });
+
 
 	$('.compress').click(function(){
 		$('.foot-feedback p').transition('slide up');
 		$(this).transition('fade');
-		$('.go-final').html('<i class="right arrow icon"></i>Next');
+		$('.go-final').html('<i class="right arrow icon"></i> Góp ý');
 	});
 
 	$('.go-final').click(function(){
@@ -247,6 +257,41 @@
 	  })
 	;
 
+	//Handle
+	$(".emoji .item").click(function(){
+
+		//Change text
+		var react = $(this).data("react");
+		var string = "";
+		var emotion = "";
+		switch(react) {
+		    case 1:
+		        string = "Tuyệt vời! Điều gì khiến bạn hài lòng?";
+		        emotion = 'statisfied';
+		        tip = "Hãy góp ý cho chúng tôi, làm sao để có thể làm tốt hơn nữa.";
+		        break;
+		    case 2:
+		        string = "Bạn cảm thấy hài lòng về điều gì?";
+		        emotion = 'neutral';
+		        tip = "Hãy góp ý cho chúng tôi, để cải thiện dịch vụ phục vụ bạn tốt hơn!";
+		        break;
+		    case 3:
+		        string = "Xin lỗi quý khách! Điều gì đã khiến bạn không hài lòng?";
+		        emotion = 'unhappy';
+		        tip = "Hãy góp ý cho chúng tôi, cần làm gì để khắc phục điều này!";
+		        break;
+		    default:
+		        string = "Tuyệt vời! Điều gì khiến bạn rất hài lòng?";
+			    emotion = 'statisfied';
+		        tip = "Hãy góp ý cho chúng tôi, làm sao để có thể làm tốt hơn nữa.";
+		}
+
+		var html = '<img src="public/images/emoji-'+emotion+'.gif" alt="">'
+		    		+'<p class="reponse-emotion">'+string+'</p>';
+		$('.reponse-emotion').html(html);
+		$('.tip-to-opinion').text(tip);
+
+	});
 
 </script>
 
