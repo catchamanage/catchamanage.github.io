@@ -211,8 +211,9 @@
 
 	//sayhello
 	$('.go-react').click(function(){
-		$('.screen-sayhello').transition('fly right', '900ms');
-		$('.screen-react').fadeIn();
+		$('.screen-sayhello').transition('fly right', '500ms', function(){
+			$('.screen-react').fadeIn(10);
+		});
 	});
 
 	//react
