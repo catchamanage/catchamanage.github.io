@@ -86,7 +86,7 @@ p.tip {
     width: 69px; }
 
 .screen-feedback {
-  margin-bottom: 389px; }
+  margin-bottom: 69px; }
   .screen-feedback .about {
     font-size: 1.32rem !important; }
   .screen-feedback .ui.checkbox {
@@ -120,9 +120,11 @@ p.tip {
   background: #3e0052; }
 
 .wrap-feedback {
-  background: #fefefe;
+  background: #f6f5f4;
   border-radius: 5px;
-  margin-top: 15px; }
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid #dddddd; }
   .wrap-feedback .head-box {
     background: #ffc801;
     border-top-left-radius: 5px;
@@ -145,5 +147,19 @@ p.tip {
 .tip-to-opinion {
   margin-bottom: 3px;
   font-size: 1.2rem; }
+
+.step {
+  margin-bottom: 25px;
+  display: block; }
+  .step .item {
+    width: 32%;
+    height: 10px;
+    border-radius: 5px;
+    background: #dddddd;
+    float: left; }
+  .step .item + .item {
+    margin-left: 1%; }
+  .step .active {
+    background: #fab059; }
 
 /*# sourceMappingURL=listen.css.map */

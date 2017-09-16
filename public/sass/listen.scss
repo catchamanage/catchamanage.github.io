@@ -156,7 +156,7 @@ p.tip{
 	}
 }
 .screen-feedback{
-	margin-bottom: 389px;
+	margin-bottom: 69px;
 	.about{
 		font-size: 1.32rem !important;
 	}
@@ -202,9 +202,13 @@ p.tip{
 }
 
 .wrap-feedback{
-    background: $white;
+    background: #f6f5f4;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
+
+    padding: 15px;
+    border: 1px solid $gray-light;
+
 
     .head-box{
         background: $yellow;
@@ -236,4 +240,27 @@ p.tip{
 .tip-to-opinion{
     margin-bottom: 3px;
     font-size: 1.2rem;
+}
+
+.step{
+
+    margin-bottom: 25px;
+    display: block;  
+    
+    .item{
+        width: 32%;
+        
+        height: 10px;
+        border-radius: 5px;
+        background: $gray-light;
+        float:left;
+    }
+
+    .item+.item{
+     margin-left: 1%;
+    }
+
+    .active{
+        background: #fab059;
+    }
 }

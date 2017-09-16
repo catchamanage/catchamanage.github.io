@@ -23,6 +23,13 @@
 <div class="screen screen-react">
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+		
+		<div class="step step-one">
+			<div class="item active"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+
 	    <p class="question-one">Đánh giá dịch vụ của chúng tôi, chọn mức độ hài lòng của bạn?</p>
 
 		<div class="ui equal width grid emoji">
@@ -59,17 +66,24 @@
 <div class="screen screen-feedback" hidden>
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-	    <!-- <p class="text-center tip">Swipe up to back</p> -->
+
+		<div class="step step-two">
+			<div class="item active comeback"></div>
+			<div class="item active"></div>
+			<div class="item unactive"></div>
+		</div>
+
+	    <!-- <p class="text-center tip">Chạm vào biểu tượng cảm xúc để quay lại</p> -->
 
 		<div class="ui grid centered ">
 		  <div class="column  text-center reponse-emotion">
-		    <img src="public/images/emoji-unhappy.gif" alt="">
+		    <img src="public/images/emoji-unhappy.gif">
 		    <p class="reponse-emotion">We are sorry. What we did wrong?</p>
 		  </div>
 		</div>
 
 		<!-- Topic -->
-		<div class="ui segment">
+		<div class="ui segment" id="subject">
 		  <div class="ui relaxed divided list">
 
 		    <div class="item">
@@ -116,34 +130,47 @@
 		      </div>
 		    </div>
 
+		    <div class="item">
+		      <div class="content">
+				  <div class="inline field">
+				    <div class="ui checkbox item-topic" data-topic="1">
+				      <input type="checkbox" tabindex="0" class="hidden">
+				      <label class="about"><img class="ui avatar image" src="public/images/etc.png"> Vấn đề khác</label>
+				    </div>
+				  </div>
+		      </div>
+		    </div>
+
 		  </div>
 		</div>
 		<!-- END Topic -->
 
-		<div class="wrap-feedback">
+		<div class="wrap-feedback opinion" hidden>
 			
-				<p class="tip-to-opinion"></p>
+			<p class="tip-to-opinion"></p>
 			<div class="ui form body-box">
 		
 				<div class="field">
-				<textarea rows="3" name="opinion" placeholder="Opinion"></textarea>
+				<textarea rows="3" name="opinion" placeholder="Góp ý chi tiết"></textarea>
 				</div>
 
-				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+				<p class="help-block">Để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
 
 				<div class="field">
-				<input name="name" type="text" placeholder="Name" value="Nguyễn Hiến">
+				<input name="name" type="text" placeholder="Họ tên">
 				</div>
 
 				<div class="field">
-				<input name="phone" type="number" placeholder="Phone" pattern="[0-9]*" inputmode="numeric" value="0919795685">
+				<input name="phone" type="number" placeholder="Điện thoại" pattern="[0-9]*" inputmode="numeric">
 				</div>
 
 				<div class="ui error message"></div>
 
-				<div class="fluid ui submit button medium blue btn-final">
-					<span class="text-roar">XONG</span>
-					<span class="text-rule">Cam kết bảo mật thông tin</span>
+				<div class="fluid ui animated button large blue btn-final submit" tabindex="0">
+				  <div class="visible content">Gửi</div>
+				  <div class="hidden content">
+				    <i class="right arrow icon"></i>
+				  </div>
 				</div>
 
 			</div>
@@ -152,11 +179,10 @@
 	</div>
 </div>
 
-
 <div class="screen screen-thanks" hidden>
 	<div class="ui grid centered">
 		<div class="wrap-thanks">
-			<img src="public/images/icon/checked_white.png" alt="" class="img-checked">
+			<img src="public/images/icon/checked_white.png" alt="" class="img-checked" hidden>
 			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
 			<p>Chúng tôi luôn trân trọng những đóng góp của bạn và mong sẽ càng nhận được nhiều phản hồi hơn nữa trong tương lai.</p>
 		</div>
@@ -171,43 +197,44 @@
 	$('.emoji .column').click(function(){
 		$(this).transition({
 				animation  : 'fly down',
-				duration   : '1s',
+				duration   : '500ms',
 				onComplete : function() {
-					$('.screen-feedback').transition('fly down', '500ms');
-					$('.foot-feedback').transition('slide up', '2s');
+					$('.screen-feedback').transition('fly down', '350ms');
+					$(this).addClass('emoji-fly');
 				}
 			});
-		$('.screen-react').transition('swing down');
+		$('.screen-react').fadeOut();
 		
+	});
+
+	$('.comeback').click(function(){
+		$('.screen-feedback').transition('fly down', '350ms');
+		$('.screen-react').fadeIn('1000ms');
+		$('.emoji-fly').transition('fly down', '650ms');
+
+		$('.emoji').find('.emoji-fly').removeClass('emoji-fly');
 	});
 
 	$('.guide').click(function(){
 		$('.foot-guide').transition('slide up', '200ms');
 	});
-	$('.go-hidden').click(function(){
-		$('.foot-guide').transition('slide up', '200ms');
+
+	$('.item-topic').click(function(){
+		$('.opinion').transition('slide up', '600ms');
+		$('.wrap-feedback').removeClass('opinion');
+		$('.unactive').addClass('active');
+
+	    $('html, body').animate({
+	        scrollTop: $("#subject").offset().top
+	    }, 1000);
 	});
 
-	// $('.item-topic').click(function(){
-	// 	$('.foot-feedback').transition({
-	// 			animation  : 'slide up',
-	// 			duration   : '2s'
-	// 			});
-	// });
-
-
-	$('.compress').click(function(){
-		$('.foot-feedback p').transition('slide up');
-		$(this).transition('fade');
-		$('.go-final').html('<i class="right arrow icon"></i> Góp ý');
+	$('.opinion').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $(".wrap-feedback").offset().top
+	    }, 1000);
 	});
 
-	$('.go-final').click(function(){
-		$('.foot-feedback').transition('fade', '500ms');
-		$('.screen-feedback').transition('fade', '450ms');
-		$('body').css({background:'#3e0052'});
-		$('.screen-opinion').transition('slide down', '500ms');
-	});
 
 	$('.ui.form')
 	  .form({
@@ -218,7 +245,7 @@
 	        rules: [
 	          {
 	            type   : 'empty',
-	            prompt : 'Please enter your opinion'
+	            prompt : 'Hãy góp ý giúp chúng tôi hoàn thiện dịch vụ của mình.'
 	          }
 	        ]
 	      },
@@ -242,9 +269,9 @@
 	      // }
 	    },
 	    onSuccess : function() {
-            $('.screen-opinion').transition('slide down', '500ms');
+            $('.screen-feedback').transition('slide down');
             $('.screen-thanks').transition('slide down', '500ms');
-            //window.location.href = "/thanks.html";
+            $('.img-checked').transition('browse', '1500ms');
         }
 	  })
 	;
@@ -278,7 +305,7 @@
 		        tip = "Hãy góp ý cho chúng tôi, làm sao để có thể làm tốt hơn nữa.";
 		}
 
-		var html = '<img src="public/images/emoji-'+emotion+'.gif" alt="">'
+		var html = '<img src="public/images/emoji-'+emotion+'.gif">'
 		    		+'<p class="reponse-emotion">'+string+'</p>';
 		$('.reponse-emotion').html(html);
 		$('.tip-to-opinion').text(tip);
