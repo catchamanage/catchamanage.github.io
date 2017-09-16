@@ -67,7 +67,7 @@ p.tip {
     .screen-thanks .wrap-thanks .say-thanks, .screen-thanks .wrap-thanks p {
       color: #fefefe; }
     .screen-thanks .wrap-thanks .say-thanks {
-      font-size: 2.2rem; }
+      font-size: 2rem; }
     .screen-thanks .wrap-thanks .tm-button-download {
       margin: 15px 0;
       box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@ p.tip {
   .screen-feedback .ui.checkbox {
     display: block !important; }
 
-.foot-feedback {
+.foot-feedback, .foot-guide {
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
   background: #3e0052;
@@ -102,8 +102,16 @@ p.tip {
   bottom: 0;
   left: 0;
   right: 0; }
-  .foot-feedback .compress {
+  .foot-feedback .compress, .foot-guide .compress {
     float: right; }
+
+.guide {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+  .guide i {
+    font-size: 1.8rem;
+    color: #4376dd; }
 
 /*Feedback*/
 .screen-opinion {
@@ -123,17 +131,19 @@ p.tip {
     .wrap-feedback .head-box .title-text {
       margin: 0;
       font-size: 1.2rem; }
-  .wrap-feedback .body-box {
-    padding: 15px; }
   .wrap-feedback .btn-final .text-roar {
     text-transform: uppercase !important;
     font-size: 1.4rem;
     line-height: 1.8rem;
     display: block; }
   .wrap-feedback .btn-final .text-rule {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     font-weight: 300;
     opacity: 0.8; }
+
+.tip-to-opinion {
+  margin-bottom: 3px;
+  font-size: 1.2rem; }
 
 /*# sourceMappingURL=listen.css.map */

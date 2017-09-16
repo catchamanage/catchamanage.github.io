@@ -9,10 +9,11 @@
 	<link rel="icon" href="public/images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="public/semantic/semantic.min.css">
 	<link rel="stylesheet" href="public/css/listen.css">
-	<script
+<!-- 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
+	  crossorigin="anonymous"></script> -->
+	  <script src="public/js/jquery-1.12.4.min.js"></script>
 	<script src="public/semantic/semantic.min.js"></script>
 
 </head>
@@ -22,7 +23,7 @@
 <div class="screen screen-react">
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-	    <p class="question-one">Bạn đánh giá đến mức nào về dịch vụ kinh doanh của chúng tôi?</p>
+	    <p class="question-one">Đánh giá dịch vụ của chúng tôi, chọn mức độ hài lòng của bạn?</p>
 
 		<div class="ui equal width grid emoji">
 		  <div class="column item" data-react="3">
@@ -38,9 +39,21 @@
 		    <p class="tip">Rất hài lòng</p>
 		  </div>
 		</div>
+		
+		<div class="guide">
+			<i class="help circle icon"></i>
+		</div>
 
 	  </div>
 	</div>
+
+	<div class="foot-guide" hidden>
+		<p class="tip-to-opinion">Đánh giá dịch vụ bằng cách, chạm biểu tượng cảm xúc tương ứng với mức độ hài lòng.</p>
+		<button class="ui button large red go-hidden">
+		  Đóng
+		</button>
+	</div>
+
 </div>
 
 <div class="screen screen-feedback" hidden>
@@ -55,7 +68,7 @@
 		  </div>
 		</div>
 
-
+		<!-- Topic -->
 		<div class="ui segment">
 		  <div class="ui relaxed divided list">
 
@@ -105,66 +118,38 @@
 
 		  </div>
 		</div>
+		<!-- END Topic -->
+
+		<div class="wrap-feedback">
+			
+				<p class="tip-to-opinion"></p>
+			<div class="ui form body-box">
 		
-
-	  </div>
-	</div>
-</div>
-
-<div class="foot-feedback" hidden>
-	<div class="compress">
-		<i class="caret down icon "></i>
-	</div>
-	<p class="tip-to-opinion">Hãy góp ý để chúng tôi cải thiện dịch vụ, phục vụ bạn tốt hơn!</p>
-	<button class="fluid ui right labeled icon button large red go-final">
-	  <i class="right arrow icon"></i>
-	  Okay
-	</button>
-
-</div>
-
-
-<div class="screen screen-opinion" hidden>
-    <div class="ui grid centered">
-	    <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-			<div class="wrap-feedback">
-
-				<div class="head-box">
-					<p class="uk-text-center uk-text-bold title-text">Mọi phản hồi của bạn đều được tiếp nhận và xử lý ngay lập tức</p>
+				<div class="field">
+				<textarea rows="3" name="opinion" placeholder="Opinion"></textarea>
 				</div>
 
+				<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
 
-				<div class="ui form body-box">
-			
-					
-					<div class="field">
-					<label>Mời bạn góp ý để giúp chúng tôi phục vụ bạn tốt hơn!</label>
-					<textarea rows="2" name="opinion" placeholder="Opinion">Nhân viên vui vẻ, phục vụ rất chu đáo</textarea>
-					</div>
+				<div class="field">
+				<input name="name" type="text" placeholder="Name" value="Nguyễn Hiến">
+				</div>
 
-					<p class="help-block">Hãy để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+				<div class="field">
+				<input name="phone" type="number" placeholder="Phone" pattern="[0-9]*" inputmode="numeric" value="0919795685">
+				</div>
 
-					<div class="field">
-					<input name="name" type="text" placeholder="Name" value="Nguyễn Hiến">
-					</div>
+				<div class="ui error message"></div>
 
-					<div class="field">
-					<input name="phone" type="number" placeholder="Phone" pattern="[0-9]*" inputmode="numeric" value="0919795685">
-					</div>
-
-					<div class="ui error message"></div>
-
-
-					<div class="fluid ui submit button medium blue btn-final">
-						<span class="text-roar">XONG</span>
-						<span class="text-rule">Cam kết bảo mật thông tin</span>
-					</div>
-
+				<div class="fluid ui submit button medium blue btn-final">
+					<span class="text-roar">XONG</span>
+					<span class="text-rule">Cam kết bảo mật thông tin</span>
 				</div>
 
 			</div>
 		</div>
-    </div>
+	  </div>
+	</div>
 </div>
 
 
@@ -173,7 +158,7 @@
 		<div class="wrap-thanks">
 			<img src="public/images/icon/checked_white.png" alt="" class="img-checked">
 			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
-			<p>Phản hồi của bạn sẽ giúp cải thiện chất lượng dịch vụ của chúng tôi.</p>
+			<p>Chúng tôi luôn trân trọng những đóng góp của bạn và mong sẽ càng nhận được nhiều phản hồi hơn nữa trong tương lai.</p>
 		</div>
 	</div>
 </div>
@@ -194,6 +179,13 @@
 			});
 		$('.screen-react').transition('swing down');
 		
+	});
+
+	$('.guide').click(function(){
+		$('.foot-guide').transition('slide up', '200ms');
+	});
+	$('.go-hidden').click(function(){
+		$('.foot-guide').transition('slide up', '200ms');
 	});
 
 	// $('.item-topic').click(function(){
@@ -230,24 +222,24 @@
 	          }
 	        ]
 	      },
-	      name: {
-	        identifier  : 'name',
-	        rules: [
-	          {
-	            type   : 'empty',
-	            prompt : 'Please enter your name'
-	          }
-	        ]
-	      },
-	      phone: {
-	        identifier  : 'phone',
-	        rules: [
-	          {
-	            type   : 'regExp[/^[+0-9_-]{10,11}$/]',
-	            prompt : 'Please enter your number phone'
-	          }
-	        ]
-	      }
+	      // name: {
+	      //   identifier  : 'name',
+	      //   rules: [
+	      //     {
+	      //       type   : 'empty',
+	      //       prompt : 'Please enter your name'
+	      //     }
+	      //   ]
+	      // },
+	      // phone: {
+	      //   identifier  : 'phone',
+	      //   rules: [
+	      //     {
+	      //       type   : 'regExp[/^[+0-9_-]{10,11}$/]',
+	      //       prompt : 'Please enter your number phone'
+	      //     }
+	      //   ]
+	      // }
 	    },
 	    onSuccess : function() {
             $('.screen-opinion').transition('slide down', '500ms');
@@ -268,12 +260,12 @@
 		    case 1:
 		        string = "Tuyệt vời! Điều gì khiến bạn hài lòng?";
 		        emotion = 'statisfied';
-		        tip = "Hãy góp ý cho chúng tôi, làm sao để có thể làm tốt hơn nữa.";
+		        tip = "Hãy góp ý cho chúng tôi, để hoàn thiện dịch vụ tốt hơn nữa.";
 		        break;
 		    case 2:
 		        string = "Bạn cảm thấy hài lòng về điều gì?";
 		        emotion = 'neutral';
-		        tip = "Hãy góp ý cho chúng tôi, để cải thiện dịch vụ phục vụ bạn tốt hơn!";
+		        tip = "Chúng tôi cần làm gì để cải thiện dịch vụ phục vụ bạn tốt hơn!";
 		        break;
 		    case 3:
 		        string = "Xin lỗi quý khách! Điều gì đã khiến bạn không hài lòng?";
