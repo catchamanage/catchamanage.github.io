@@ -115,7 +115,15 @@ p.tip {
 
 /*Screen react*/
 .screen-react .emoji {
-  margin-top: 219px; }
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .screen-react .emoji .item {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
   .screen-react .emoji img {
     width: 69px; }
 

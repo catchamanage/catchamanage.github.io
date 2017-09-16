@@ -45,7 +45,7 @@
 
 	    <p class="question-one">Đánh giá dịch vụ của chúng tôi, chọn mức độ hài lòng của bạn?</p>
 
-		<div class="ui equal width grid emoji">
+		<div class="emoji ui equal width center aligned grid">			
 		  <div class="column item" data-react="3">
 		    <img src="public/images/emoji-unhappy.gif" alt="">
 		    <p class="tip">Không hài lòng</p>
@@ -192,7 +192,7 @@
 				<div class="fluid ui animated button large blue btn-final submit" tabindex="0">
 				  <div class="visible content">Gửi</div>
 				  <div class="hidden content">
-				    <i class="right arrow icon"></i>
+				    <i class="send icon"></i>
 				  </div>
 				</div>
 
@@ -211,12 +211,13 @@
 
 	//sayhello
 	$('.go-react').click(function(){
-		$('.screen-sayhello').transition('fly right', '500ms');
+		$('.screen-sayhello').transition('fly right', '900ms');
 		$('.screen-react').fadeIn();
 	});
 
 	//react
 	$('.emoji .column').click(function(){
+		$('.screen-react').fadeOut();
 		$(this).transition({
 				animation  : 'fly down',
 				duration   : '500ms',
@@ -225,7 +226,6 @@
 					$(this).addClass('emoji-fly');
 				}
 			});
-		$('.screen-react').fadeOut();
 		
 	});
 
