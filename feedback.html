@@ -19,8 +19,21 @@
 </head>
 <body>
 
+<div class="screen screen-sayhello">
+	<img src="public/uploads/jaxtina.png" class="logo">
+	
+	<div class="core">
+		<h1 class="sayhello">Hãy tham gia đánh giá để giúp Jaxtina cải thiện chất lượng dịch vụ!</h1>
 
-<div class="screen screen-react">
+		<button class="big ui yellow button go-react">
+		  Bắt đầu
+		</button>
+	</div>
+
+	<p class='copyright'>Sức mạnh đến từ <a href="http://catcha.vn" target="_blank" class='brand'>CATCHA</a></p>
+</div>
+
+<div class="screen screen-react" hidden>
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
 		
@@ -55,7 +68,7 @@
 	</div>
 
 	<div class="foot-guide" hidden>
-		<p class="tip-to-opinion">Đánh giá dịch vụ bằng cách, chạm biểu tượng cảm xúc tương ứng với mức độ hài lòng.</p>
+		<p>Đánh giá dịch vụ bằng cách, chạm biểu tượng cảm xúc tương ứng với mức độ hài lòng.</p>
 		<button class="ui button large red go-hidden">
 		  Đóng
 		</button>
@@ -101,7 +114,7 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/chef.png"> Nhân viên</label>
+				      <label class="about"><img class="ui avatar image" src="public/uploads/chef.png"> Nhân viên</label>
 				    </div>
 				  </div>
 		      </div>
@@ -112,7 +125,7 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/burger-flat.png"> Thực đơn</label>
+				      <label class="about"><img class="ui avatar image" src="public/uploads/burger-flat.png"> Thực đơn</label>
 				    </div>
 				  </div>
 		      </div>
@@ -123,7 +136,7 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/salt.png"> Khẩu vị</label>
+				      <label class="about"><img class="ui avatar image" src="public/uploads/salt.png"> Khẩu vị</label>
 				    </div>
 				  </div>
 		      </div>
@@ -134,7 +147,7 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/grocery.png"> Không gian</label>
+				      <label class="about"><img class="ui avatar image" src="public/uploads/grocery.png"> Không gian</label>
 				    </div>
 				  </div>
 		      </div>
@@ -145,7 +158,7 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/etc.png"> Vấn đề khác</label>
+				      <label class="about"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</label>
 				    </div>
 				  </div>
 		      </div>
@@ -196,6 +209,13 @@
 	//Effect
 	$('.ui.checkbox').checkbox();
 
+	//sayhello
+	$('.go-react').click(function(){
+		$('.screen-sayhello').transition('fly right', '500ms');
+		$('.screen-react').fadeIn();
+	});
+
+	//react
 	$('.emoji .column').click(function(){
 		$(this).transition({
 				animation  : 'fly down',
@@ -217,7 +237,7 @@
 		$('.emoji').find('.emoji-fly').removeClass('emoji-fly');
 	});
 
-	$('.guide').click(function(){
+	$('.guide, .go-hidden').click(function(){
 		$('.foot-guide').transition('slide up', '200ms');
 	});
 
@@ -230,12 +250,6 @@
 	        scrollTop: $("#subject").offset().top
 	    }, 1000);
 	});
-
-	// $('.opinion').click(function(){
-	//     $('html, body').animate({
-	//         scrollTop: $(".wrap-feedback").offset().top
-	//     }, 500);
-	// });
 
 
 	$('.ui.form')

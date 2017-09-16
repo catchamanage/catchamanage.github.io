@@ -25,12 +25,16 @@ $red-light: rgba(230, 33, 23, 1);
 
 /*General*/
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     font-size: 14px;
     line-height: 1.42857143;
     color: #67686a;
     font-size: 1.4rem;
     background: $white;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, button{
+    font-family: 'Roboto', sans-serif !important;
 }
 
 p.tip{
@@ -90,6 +94,52 @@ p.tip{
     }
 }
 
+
+/*Welcome*/
+.screen-sayhello{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    .logo{
+        margin-top: 35px;
+        width: 180px;
+    }
+
+    .core{
+        position:fixed;
+        bottom: 100px;
+        right: 0px;
+        padding: 25px;
+    }
+
+    .sayhello{
+        margin-top: 55px;
+    }
+
+    .copyright{
+        float: right;
+        color: $gray-light;
+        font-size: 1rem;
+        position:fixed;
+        bottom: 5px;
+        right: 5px;
+
+        .brand{
+            color: $gray;
+            font-weight: bold;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+
+    .go-react{
+        color: $black !important;
+        font-weight: bold;
+    }
+}
 
 
 /*Screen Thanks*/
