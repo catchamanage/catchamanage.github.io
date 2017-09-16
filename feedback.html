@@ -63,6 +63,16 @@
 
 </div>
 
+<div class="screen screen-thanks" hidden>
+	<div class="ui grid centered">
+		<div class="wrap-thanks">
+			<img src="public/images/icon/checked_white.png" alt="" class="img-checked" hidden>
+			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
+			<p class="say-futuer" hidden>Chúng tôi luôn trân trọng những đóng góp của bạn và mong nhận được càng nhiều phản hồi hơn nữa trong tương lai.</p>
+		</div>
+	</div>
+</div>
+
 <div class="screen screen-feedback" hidden>
 	<div class="ui grid centered">
 	  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
@@ -154,7 +164,7 @@
 				<textarea rows="3" name="opinion" placeholder="Góp ý chi tiết"></textarea>
 				</div>
 
-				<p class="help-block">Để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận (Không bắt buộc):</p>
+				<p class="help-block">Để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận:</p>
 
 				<div class="field">
 				<input name="name" type="text" placeholder="Họ tên">
@@ -179,15 +189,7 @@
 	</div>
 </div>
 
-<div class="screen screen-thanks" hidden>
-	<div class="ui grid centered">
-		<div class="wrap-thanks">
-			<img src="public/images/icon/checked_white.png" alt="" class="img-checked" hidden>
-			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
-			<p>Chúng tôi luôn trân trọng những đóng góp của bạn và mong sẽ càng nhận được nhiều phản hồi hơn nữa trong tương lai.</p>
-		</div>
-	</div>
-</div>
+
 
 <script>
 
@@ -208,7 +210,7 @@
 	});
 
 	$('.comeback').click(function(){
-		$('.screen-feedback').transition('fly down', '350ms');
+		$('.screen-feedback').transition('fly down', '19ms');
 		$('.screen-react').fadeIn('1000ms');
 		$('.emoji-fly').transition('fly down', '650ms');
 
@@ -269,9 +271,10 @@
 	      // }
 	    },
 	    onSuccess : function() {
-            $('.screen-feedback').transition('slide down');
-            $('.screen-thanks').transition('slide down', '500ms');
-            $('.img-checked').transition('browse', '1500ms');
+            $('.screen-feedback').transition('fade', '10ms');
+            $('.screen-thanks').transition('fade', '650ms');
+            $('.say-futuer').transition('slide down', '800ms');
+            $('.img-checked').transition('browse', '1600ms');
         }
 	  })
 	;
