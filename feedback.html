@@ -231,11 +231,11 @@
 	    }, 1000);
 	});
 
-	$('.opinion').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $(".wrap-feedback").offset().top
-	    }, 800);
-	});
+	// $('.opinion').click(function(){
+	//     $('html, body').animate({
+	//         scrollTop: $(".wrap-feedback").offset().top
+	//     }, 500);
+	// });
 
 
 	$('.ui.form')
@@ -273,7 +273,7 @@
 	    onSuccess : function() {
             $('.screen-feedback').transition('fade', '10ms');
             $('.screen-thanks').transition('fade', '650ms');
-            $('.say-futuer').transition('slide down', '800ms');
+            $('.say-futuer').transition('fly left', '800ms');
             $('.img-checked').transition('browse', '1600ms');
         }
 	  })
