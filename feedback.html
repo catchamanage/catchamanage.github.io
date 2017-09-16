@@ -43,7 +43,7 @@
 			<div class="item"></div>
 		</div>
 
-	    <p class="question-one">Đánh giá dịch vụ của chúng tôi, chọn mức độ hài lòng của bạn?</p>
+	    <p class="question-one">Mức độ hài lòng về dịch vụ của chúng tôi?</p>
 
 		<div class="emoji ui equal width center aligned grid">			
 		  <div class="column item" data-react="3">
@@ -68,7 +68,7 @@
 	</div>
 
 	<div class="foot-guide" hidden>
-		<p>Đánh giá dịch vụ bằng cách, chạm biểu tượng cảm xúc tương ứng với mức độ hài lòng.</p>
+		<p>Đánh giá dịch vụ bằng cách <b>chạm</b> biểu tượng cảm xúc tương ứng với mức độ hài lòng.</p>
 		<button class="ui button large red go-hidden">
 		  Đóng
 		</button>
@@ -81,7 +81,7 @@
 		<div class="wrap-thanks">
 			<img src="public/images/icon/checked_white.png" alt="" class="img-checked" hidden>
 			<h1 class="say-thanks">Cảm ơn bạn đã phản hồi.</h1>
-			<p class="say-futuer" hidden>Chúng tôi luôn trân trọng những đóng góp của bạn và mong nhận được càng nhiều phản hồi hơn nữa trong tương lai.</p>
+			<p class="say-futuer">Chúng tôi luôn trân trọng những đóng góp của bạn và mong nhận được càng nhiều phản hồi hơn nữa trong tương lai.</p>
 		</div>
 	</div>
 </div>
@@ -106,23 +106,25 @@
 		</div>
 
 
-		<div class="ui sub header">Search Selection</div>
+
 		<div class="ui fluid multiple normal selection dropdown">
-			<input type="hidden" name="country">
+			<input type="hidden" name="topic">
 			<i class="dropdown icon"></i>
-			<div class="default text">Select Country</div>
-			<div class="menu">
-			  <div class="item" data-value="af"><img src="public/uploads/chef.png"> Nhân viên</div>
-			  <div class="item" data-value="ax"><img src="public/uploads/burger-flat.png"> Thực đơn</div>
-			  <div class="item" data-value="al"><img src="public/uploads/salt.png"> Khẩu vị</div>
-			  <div class="item" data-value="dz"><img src="public/uploads/grocery.png"> Không gian</div>
-			  <div class="item" data-value="as"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</div>
+			<div class="default text">Chọn lý do</div>
+			<div class="menu topic">
+			  <div class="item" data-value="1"><img src="public/uploads/chef.png"> Nhân viên</div>
+			  <div class="item" data-value="2"><img src="public/uploads/burger-flat.png"> Thực đơn</div>
+			  <div class="item" data-value="3"><img src="public/uploads/salt.png"> Khẩu vị</div>
+			  <div class="item" data-value="4"><img src="public/uploads/grocery.png"> Không gian</div>
+			  <div class="item" data-value="5"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</div>
 			</div>
 		 </div>
-		<!-- Topic -->
-		<div class="ui segment" id="subject">
-		  <div class="ui relaxed divided list">
 
+
+		<!-- Topic -->
+<!-- 		<div class="ui segment" id="subject">
+		<p>Chọn lý do</p>
+		  <div class="ui relaxed divided list">
 		    <div class="item">
 		      <div class="content">
 				  <div class="inline field">
@@ -180,7 +182,7 @@
 		    </div>
 
 		  </div>
-		</div>
+		</div> -->
 		<!-- END Topic -->
 
 		<div class="wrap-feedback opinion" hidden>
@@ -245,7 +247,7 @@
 				animation  : 'fly down',
 				duration   : '500ms',
 				onComplete : function() {
-					$('.screen-feedback').transition('fly down', '350ms');
+					$('.screen-feedback').transition('slide down', '350ms');
 					$(this).addClass('emoji-fly');
 				}
 			});
@@ -264,7 +266,7 @@
 		$('.foot-guide').transition('slide up', '200ms');
 	});
 
-	$('.item-topic').click(function(){
+	$('.topic .item').click(function(){
 		$('.opinion').transition('slide up', '600ms');
 		$('.wrap-feedback').removeClass('opinion');
 		$('.unactive').addClass('active');
@@ -310,7 +312,6 @@
 	    onSuccess : function() {
             $('.screen-feedback').transition('fade', '10ms');
             $('.screen-thanks').transition('fade', '650ms');
-            $('.say-futuer').transition('fly left', '800ms');
             $('.img-checked').transition('browse', '1800ms');
         }
 	  })
@@ -325,19 +326,19 @@
 		var emotion = "";
 		switch(react) {
 		    case 1:
-		        string = "Tuyệt vời! Điều gì khiến bạn hài lòng?";
+		        string = "Tuyệt vời! Bạn hài lòng nhất về điều gì?";
 		        emotion = 'statisfied';
-		        tip = "Hãy góp ý cho chúng tôi, để hoàn thiện dịch vụ tốt hơn nữa.";
+		        tip = "Hãy góp ý để chúng tôi hoàn thiện dịch vụ tốt hơn nữa.";
 		        break;
 		    case 2:
-		        string = "Bạn cảm thấy hài lòng về điều gì?";
+		        string = "Bạn hài lòng nhất về điều gì?";
 		        emotion = 'neutral';
-		        tip = "Chúng tôi cần làm gì để cải thiện dịch vụ phục vụ bạn tốt hơn!";
+		        tip = "Chúng tôi cần làm gì để cải thiện dịch vụ tốt hơn?";
 		        break;
 		    case 3:
-		        string = "Xin lỗi quý khách! Điều gì đã khiến bạn không hài lòng?";
+		        string = "Xin lỗi quý khách! Bạn không hài lòng về điều gì?";
 		        emotion = 'unhappy';
-		        tip = "Hãy góp ý cho chúng tôi, cần làm gì để khắc phục điều này!";
+		        tip = "Chúng tôi cần làm gì để khắc phục sai sót này?";
 		        break;
 		    default:
 		        string = "Tuyệt vời! Điều gì khiến bạn rất hài lòng?";
@@ -345,7 +346,7 @@
 		        tip = "Hãy góp ý cho chúng tôi, làm sao để có thể làm tốt hơn nữa.";
 		}
 
-		var html = '<img src="public/images/emoji-'+emotion+'.gif">'
+		var html = '<img src="public/images/emoji-'+emotion+'.gif" style="height: 85px">'
 		    		+'<p class="reponse-emotion">'+string+'</p>';
 		$('.reponse-emotion').html(html);
 		$('.tip-to-opinion').text(tip);

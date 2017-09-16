@@ -215,4 +215,7 @@ p.tip {
 .ui.selection.dropdown .menu > .item {
   font-size: 1.2rem; }
 
+.ui.multiple.dropdown > .label {
+  font-size: 1.2rem; }
+
 /*# sourceMappingURL=listen.css.map */
