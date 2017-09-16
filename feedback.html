@@ -105,6 +105,20 @@
 		  </div>
 		</div>
 
+
+		<div class="ui sub header">Search Selection</div>
+		<div class="ui fluid multiple normal selection dropdown">
+			<input type="hidden" name="country">
+			<i class="dropdown icon"></i>
+			<div class="default text">Select Country</div>
+			<div class="menu">
+			  <div class="item" data-value="af"><img src="public/uploads/chef.png"> Nhân viên</div>
+			  <div class="item" data-value="ax"><img src="public/uploads/burger-flat.png"> Thực đơn</div>
+			  <div class="item" data-value="al"><img src="public/uploads/salt.png"> Khẩu vị</div>
+			  <div class="item" data-value="dz"><img src="public/uploads/grocery.png"> Không gian</div>
+			  <div class="item" data-value="as"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</div>
+			</div>
+		 </div>
 		<!-- Topic -->
 		<div class="ui segment" id="subject">
 		  <div class="ui relaxed divided list">
@@ -125,7 +139,8 @@
 				  <div class="inline field">
 				    <div class="ui checkbox item-topic" data-topic="1">
 				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/uploads/burger-flat.png"> Thực đơn</label>
+				      <label class="about">
+				      <img class="ui avatar image" src="public/uploads/burger-flat.png"> Thực đơn</label>
 				    </div>
 				  </div>
 		      </div>
@@ -171,7 +186,7 @@
 		<div class="wrap-feedback opinion" hidden>
 			
 			<p class="tip-to-opinion"></p>
-			<div class="ui form body-box">
+			<div class="ui form large body-box">
 		
 				<div class="field">
 				<textarea rows="3" name="opinion" placeholder="Góp ý chi tiết"></textarea>
@@ -208,6 +223,13 @@
 
 	//Effect
 	$('.ui.checkbox').checkbox();
+
+	$('.ui.normal.dropdown')
+	  .dropdown({
+	    maxSelections: 5
+	  })
+	;
+
 
 	//sayhello
 	$('.go-react').click(function(){

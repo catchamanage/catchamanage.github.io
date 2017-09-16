@@ -205,4 +205,14 @@ p.tip {
   .step .active {
     background: #fab059; }
 
+/*FIX*/
+.ui.multiple.dropdown > .label {
+  padding: 5px 5px !important; }
+
+.ui.label > img {
+  height: 1.1666em !important; }
+
+.ui.selection.dropdown .menu > .item {
+  font-size: 1.2rem; }
+
 /*# sourceMappingURL=listen.css.map */
