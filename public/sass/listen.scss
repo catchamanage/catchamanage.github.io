@@ -342,3 +342,9 @@ p.tip{
 .ui.multiple.dropdown>.label {
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+    .ui.selection.dropdown .menu {
+        max-height: 14rem;
+    }
+}
