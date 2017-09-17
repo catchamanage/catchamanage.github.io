@@ -106,113 +106,50 @@
 		</div>
 
 
+		<div class="ui form large body-box">
 
-		<div class="ui fluid multiple normal selection dropdown">
-			<input type="hidden" name="topic">
-			<i class="dropdown icon"></i>
-			<div class="default text">Chọn lý do</div>
-			<div class="menu topic">
-			  <div class="item" data-value="1"><img src="public/uploads/chef.png"> Nhân viên</div>
-			  <div class="item" data-value="2"><img src="public/uploads/burger-flat.png"> Thực đơn</div>
-			  <div class="item" data-value="3"><img src="public/uploads/salt.png"> Khẩu vị</div>
-			  <div class="item" data-value="4"><img src="public/uploads/grocery.png"> Không gian</div>
-			  <div class="item" data-value="5"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</div>
-			</div>
-		 </div>
+			<input type="hidden" name="brand" value="zalo_quan-1975">
+			<input type="hidden" name="location" value="">
 
+			<div class="ui fluid multiple normal selection dropdown">
+				<input type="hidden" name="subject">
+				<i class="dropdown icon"></i>
+				<div class="default text">Chọn lý do</div>
+				<div class="menu topic">
+				  <div class="item" data-value="1"><img src="public/uploads/chef.png"> Nhân viên</div>
+				  <div class="item" data-value="2"><img src="public/uploads/burger-flat.png"> Thực đơn</div>
+				  <div class="item" data-value="3"><img src="public/uploads/salt.png"> Khẩu vị</div>
+				  <div class="item" data-value="4"><img src="public/uploads/grocery.png"> Không gian</div>
+				  <div class="item" data-value="5"><img class="ui avatar image" src="public/images/icon/etc.png"> Khác</div>
+				</div>
+			 </div>
 
-		<!-- Topic -->
-<!-- 		<div class="ui segment" id="subject">
-		<p>Chọn lý do</p>
-		  <div class="ui relaxed divided list">
-		    <div class="item">
-		      <div class="content">
-				  <div class="inline field">
-				    <div class="ui checkbox item-topic" data-topic="1">
-				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/uploads/chef.png"> Nhân viên</label>
-				    </div>
-				  </div>
-		      </div>
-		    </div>
-
-		    <div class="item">
-		      <div class="content">
-				  <div class="inline field">
-				    <div class="ui checkbox item-topic" data-topic="1">
-				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about">
-				      <img class="ui avatar image" src="public/uploads/burger-flat.png"> Thực đơn</label>
-				    </div>
-				  </div>
-		      </div>
-		    </div>
-
-		    <div class="item">
-		      <div class="content">
-				  <div class="inline field">
-				    <div class="ui checkbox item-topic" data-topic="1">
-				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/uploads/salt.png"> Khẩu vị</label>
-				    </div>
-				  </div>
-		      </div>
-		    </div>
-
-		    <div class="item">
-		      <div class="content">
-				  <div class="inline field">
-				    <div class="ui checkbox item-topic" data-topic="1">
-				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/uploads/grocery.png"> Không gian</label>
-				    </div>
-				  </div>
-		      </div>
-		    </div>
-
-		    <div class="item">
-		      <div class="content">
-				  <div class="inline field">
-				    <div class="ui checkbox item-topic" data-topic="1">
-				      <input type="checkbox" tabindex="0" class="hidden">
-				      <label class="about"><img class="ui avatar image" src="public/images/icon/etc.png"> Vấn đề khác</label>
-				    </div>
-				  </div>
-		      </div>
-		    </div>
-
-		  </div>
-		</div> -->
-		<!-- END Topic -->
-
-		<div class="wrap-feedback opinion" hidden>
+			<div class="wrap-feedback opinion" hidden>
+				
+				<p class="tip-to-opinion"></p>
 			
-			<p class="tip-to-opinion"></p>
-			<div class="ui form large body-box">
-		
-				<div class="field">
-				<textarea rows="3" name="opinion" placeholder="Góp ý chi tiết"></textarea>
-				</div>
+					<div class="field">
+					<textarea rows="3" name="opinion" placeholder="Góp ý chi tiết"></textarea>
+					</div>
 
-				<p class="help-block">Để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận:</p>
+					<p class="help-block">Để lại thông tin để được hỗ trợ ngay khi phản hồi được tiếp nhận:</p>
 
-				<div class="field">
-				<input name="name" type="text" placeholder="Họ tên">
-				</div>
+					<div class="field">
+					<input name="name" type="text" placeholder="Họ tên">
+					</div>
 
-				<div class="field">
-				<input name="phone" type="number" placeholder="Điện thoại" pattern="[0-9]*" inputmode="numeric">
-				</div>
+					<div class="field">
+					<input name="phone" type="number" placeholder="Điện thoại" pattern="[0-9]*" inputmode="numeric">
+					</div>
 
-				<div class="ui error message"></div>
+					<div class="ui error message"></div>
 
-				<div class="fluid ui animated button large blue btn-final submit" tabindex="0">
-				  <div class="visible content">Gửi</div>
-				  <div class="hidden content">
-				    <i class="send icon"></i>
-				  </div>
-				</div>
-
+					<div class="fluid ui animated button large blue btn-final submit" tabindex="0">
+					  <div class="visible content">Gửi</div>
+					  <div class="hidden content">
+					    <i class="send icon"></i>
+					  </div>
+					</div>
 			</div>
 		</div>
 	  </div>
@@ -251,7 +188,6 @@
 					$(this).addClass('emoji-fly');
 				}
 			});
-		
 	});
 
 	$('.comeback').click(function(){
@@ -260,6 +196,9 @@
 		$('.emoji-fly').transition('fly down', '650ms');
 
 		$('.emoji').find('.emoji-fly').removeClass('emoji-fly');
+
+		
+
 	});
 
 	$('.guide, .go-hidden').click(function(){
@@ -271,57 +210,17 @@
 		$('.wrap-feedback').removeClass('opinion');
 		$('.unactive').addClass('active');
 
-	    // $('html, body').animate({
-	    //     scrollTop: $("#subject").offset().top
-	    // }, 1000);
+
 	});
 
 
-	$('.ui.form')
-	  .form({
-	    on: 'blur',
-	    fields: {
-	      opinion: {
-	        identifier  : 'opinion',
-	        rules: [
-	          {
-	            type   : 'empty',
-	            prompt : 'Hãy góp ý giúp chúng tôi hoàn thiện dịch vụ của mình.'
-	          }
-	        ]
-	      },
-	      // name: {
-	      //   identifier  : 'name',
-	      //   rules: [
-	      //     {
-	      //       type   : 'empty',
-	      //       prompt : 'Please enter your name'
-	      //     }
-	      //   ]
-	      // },
-	      // phone: {
-	      //   identifier  : 'phone',
-	      //   rules: [
-	      //     {
-	      //       type   : 'regExp[/^[+0-9_-]{10,11}$/]',
-	      //       prompt : 'Please enter your number phone'
-	      //     }
-	      //   ]
-	      // }
-	    },
-	    onSuccess : function() {
-            $('.screen-feedback').transition('fade', '10ms');
-            $('.screen-thanks').transition('fade', '650ms');
-            $('.img-checked').transition('browse', '1800ms');
-        }
-	  })
-	;
 
 	//Handle
+	var react = 0;
 	$(".emoji .item").click(function(){
 
 		//Change text
-		var react = $(this).data("react");
+		react = $(this).data("react");
 		var string = "";
 		var emotion = "";
 		switch(react) {
@@ -352,6 +251,160 @@
 		$('.tip-to-opinion').text(tip);
 
 	});
+
+	//validate form
+	$('.ui.form')
+	  .form({
+	    on: 'blur',
+	    fields: {
+	      opinion: {
+	        identifier  : 'opinion',
+	        rules: [
+	          {
+	            type   : 'empty',
+	            prompt : 'Hãy góp ý giúp chúng tôi hoàn thiện dịch vụ của mình.'
+	          },
+	          {
+	            type   : 'maxLength[500]',
+	            prompt : 'Góp ý không dài quá 500 ký tự.'
+	          },
+            	{
+	            type   : 'doesntContain[<]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[>]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[\']',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[\"]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[@]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[{]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[}]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          }
+	        ]
+	      },
+	      name: {
+	        identifier  : 'name',
+	        rules: [
+	          {
+	            type   : 'maxLength[50]',
+	            prompt : 'Xin lỗi hãy dùng tên ngắn hơn.'
+	          },
+            	{
+	            type   : 'doesntContain[<]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[>]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[\']',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[\"]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[@]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[{]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          },
+            	{
+	            type   : 'doesntContain[}]',
+	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	          }
+	        ]
+	      },
+	      phone: {
+	        identifier  : 'phone',
+	        rules: [
+	          {
+	            type   : 'regExp[/^[+0-9_-]{0,11}$/]',
+	            prompt : 'Chỉ điền số điện thoại.'
+	          }
+	        ]
+	      },
+	      brand: {
+	        identifier  : 'brand',
+	        rules: [
+	          {
+	            type   : 'regExp[/^[a-zA-Z0-9_-]{3,50}$/]',
+	            prompt : 'Không tìm thấy thương hiệu đề xuất.'
+	          }
+	        ]
+	      },
+	      location: {
+	        identifier  : 'location',
+	        rules: [
+	          {
+	            type   : 'regExp[/^[a-zA-Z0-9_-]{0,255}$/]',
+	            prompt : 'Không tìm thấy vị trí đề xuất.'
+	          }
+	        ]
+	      },
+	      subject: {
+	        identifier  : 'subject',
+	        rules: [
+	          {
+	            type   : 'maxCount[5]',
+	            prompt : 'Tối đa được chọn 5 chủ đề.'
+	          },
+	          {
+	            type   : 'regExp[/^[\,0-9]{0,11}$/]',
+	            prompt : 'Không tìm thấy chủ đề đề xuất.'
+	          }
+	        ]
+	      }
+	    },
+	    onSuccess : function() {
+            $('.screen-feedback').transition('fade', '10ms');
+            $('.screen-thanks').transition('fade', '650ms');
+            $('.img-checked').transition('browse', '1800ms');
+
+			var brand = $("input[name=brand]").val();
+			var location = $("input[name=location]").val();
+			var subject = $("input[name=subject]").val();
+			var opinion = $("textarea[name=opinion]").val();
+			var name = $("input[name=name]").val();
+			var phone = $("input[name=phone]").val();
+
+			var data = {
+				react: react,
+				brand: brand,
+				location: location,
+				subject: subject,
+				opinion: opinion,
+				name: name,
+				phone: phone
+			}
+			console.log(data);
+
+        }
+	  })
+	;
+
+
+
 
 </script>
 

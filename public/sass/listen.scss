@@ -335,12 +335,23 @@ p.tip{
     height: 1.1666em!important;
 }
 
+.ui.selection.dropdown{
+    margin-top: 15px;
+}
+
 .ui.selection.dropdown .menu>.item {
     font-size: 1.2rem;
 }
 
 .ui.multiple.dropdown>.label {
     font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 414px){
+    
+    .ui.multiple.dropdown {
+        padding-right: 0.8rem !important;
+    }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px){
