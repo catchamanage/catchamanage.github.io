@@ -9,11 +9,7 @@
 	<link rel="icon" href="public/images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="public/semantic/semantic.min.css">
 	<link rel="stylesheet" href="public/css/listen.css">
-<!-- 	<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script> -->
-	  <script src="public/js/jquery-1.12.4.min.js"></script>
+	<script src="public/js/jquery-1.12.4.min.js"></script>
 	<script src="public/semantic/semantic.min.js"></script>
 
 </head>
@@ -106,7 +102,7 @@
 		</div>
 
 
-		<div class="ui form large body-box">
+		<div class="ui form large body-box information">
 
 			<input type="hidden" name="brand" value="zalo_quan-1975">
 			<input type="hidden" name="location" value="">
@@ -253,7 +249,7 @@
 	});
 
 	//validate form
-	$('.ui.form')
+	$('.information')
 	  .form({
 	    on: 'blur',
 	    fields: {
@@ -307,31 +303,31 @@
 	          },
             	{
 	            type   : 'doesntContain[<]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[>]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[\']',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[\"]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[@]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[{]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          },
             	{
 	            type   : 'doesntContain[}]',
-	            prompt : 'Góp ý không chứa ký tự đặc biệt.'
+	            prompt : 'Họ tên không chứa ký tự đặc biệt.'
 	          }
 	        ]
 	      },
@@ -402,8 +398,6 @@
         }
 	  })
 	;
-
-
 
 
 </script>

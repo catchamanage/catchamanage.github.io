@@ -57,7 +57,8 @@ p.tip {
   text-align: center; }
   .screen-sayhello .logo {
     margin-top: 35px;
-    width: 180px; }
+    height: 128px;
+    width: auto; }
   .screen-sayhello .core {
     position: fixed;
     bottom: 100px;
